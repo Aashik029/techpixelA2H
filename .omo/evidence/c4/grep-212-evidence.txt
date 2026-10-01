@@ -1,0 +1,20 @@
+C4 fabrication-removal proof — grep for `212%` over source AND built output
+Date: 2026-09-29. Production artifact from `npm run build` (exit 0, adapter-static).
+
+1. Source tree: pattern `212%` over `src/` → No matches found (0 hits).
+   Covers TargoWork.svelte (line-181 `+212%` badge from plan is gone; current
+   file is 219 lines with no percentage badge) and all C4 routes/content.
+
+2. Built output: pattern `212%` over `build/**/*.html` → 0 hits (DONE, no matches).
+
+3. Prerender proof: build/work.html exists (True) + all 6 slugs emitted:
+   build/work/{local-store-online,team-workspace,hrms-concept,
+   festival-posters,seo-blog-system,growth-campaign}.html
+
+4. Happy QA: .omo/evidence/c4/c4-qa-results.txt — C4-QA PASS (29/29 checks:
+   index 200 + 6 card hrefs + 6 index disclosures non-empty; home 6 inbound
+   hrefs + home-no-212pct; 6 slugs 200 + disclosure non-empty + hrms concept
+   label). Screenshots: happy-work-index.png, happy-work-hrms-concept.png.
+
+5. Typecheck: `npm run check` → 0 errors (2 pre-existing unused-CSS warnings
+   in C2/C6-owned about page, out of C4 scope).

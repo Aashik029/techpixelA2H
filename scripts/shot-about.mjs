@@ -1,0 +1,16 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch({ channel: 'chrome' });
+const page = await browser.newPage({ viewport: { width: 1600, height: 900 } });
+const errors = [];
+page.on('pageerror', (e) => errors.push('PAGEERROR: ' + e.message));
+page.on('console', (m) => { if (m.type() === 'error') errors.push('CONSOLE: ' + m.text()); });
+await page.goto('http://localhost:4173/about', { waitUntil: 'networkidle' });
+await page.waitForTimeout(1500);
+await page.screenshot({ path: 'D:/pixel/about-top.png' });
+await page.locator('.about-leaders').scrollIntoViewIfNeeded();
+await page.waitForTimeout(600);
+await page.screenshot({ path: 'D:/pixel/about-leaders.png' });
+const img = await page.locator('.leader-photo img').evaluate((el) => ({ w: el.naturalWidth, h: el.naturalHeight }));
+console.log('CEO photo natural size:', JSON.stringify(img));
+console.log('ERRORS:', errors.length ? errors.join(' | ') : 'NONE');
+await browser.close();

@@ -1,0 +1,199 @@
+/* Shared Targo look: light bands, Quantico, chamfered edges, cyan #15BCDF.
+   Wrapped in @layer components so Tailwind utilities (e.g. bg-[#12212e]
+   overrides on .targo-card) always win on conflict. */
+@layer components {
+.targo-quant {
+  font-family: 'Quantico', 'Space Grotesk', system-ui, sans-serif;
+}
+
+.targo-band {
+  background: #f2f1f0;
+}
+
+.targo-band-white {
+  background: #ffffff;
+}
+
+.targo-title {
+  font-family: 'Quantico', 'Space Grotesk', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(44px, 7vw, 96px);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #12212e;
+}
+
+.targo-title .t-accent {
+  color: #0a6f8c;
+}
+
+.targo-lead {
+  font-family: 'Quantico', 'Space Grotesk', system-ui, sans-serif;
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.75;
+  color: #3d4653;
+}
+
+.targo-eyebrow {
+  font-family: 'Quantico', 'Space Grotesk', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #0a6f8c;
+}
+
+/* chamfered CTA — matches hero GET STARTED */
+.targo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Quantico', 'Space Grotesk', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #12212e;
+  padding: 16px 34px;
+  min-height: 52px;
+  clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.targo-btn:hover {
+  background: #15bcdf;
+  transform: translateY(-2px);
+}
+
+.targo-btn-cyan {
+  background: #15bcdf;
+  color: #12212e;
+}
+
+.targo-btn-cyan:hover {
+  background: #12212e;
+}
+
+/* chamfered cards */
+.targo-card {
+  background: #ffffff;
+  border: 1px solid rgba(18, 33, 46, 0.1);
+  clip-path: polygon(22px 0, 100% 0, 100% calc(100% - 22px), calc(100% - 22px) 100%, 0 100%, 0 22px);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.targo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 50px rgba(18, 33, 46, 0.12);
+}
+
+.targo-num {
+  font-family: 'Quantico', 'Space Grotesk', system-ui, sans-serif;
+  font-weight: 700;
+  color: #0a6f8c;
+}
+
+.targo-field {
+  width: 100%;
+  font-family: 'Quantico', 'Space Grotesk', system-ui, sans-serif;
+  font-size: 15px;
+  color: #12212e;
+  background: #fff;
+  border: 1px solid rgba(18, 33, 46, 0.18);
+  padding: 14px 16px;
+  min-height: 52px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.targo-field::placeholder {
+  color: rgba(61, 70, 83, 0.55);
+}
+
+.targo-field:focus {
+  border-color: #15bcdf;
+  box-shadow: 0 0 0 3px rgba(21, 188, 223, 0.15);
+}
+
+.targo-field-label {
+  display: block;
+  font-family: 'Quantico', 'Space Grotesk', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #12212e;
+  margin-bottom: 8px;
+}
+
+/* ---- prose defaults (light) ---- */
+.targo-prose {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  color: #3d4653;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+
+.targo-prose h1,
+.targo-prose h2,
+.targo-prose h3,
+.targo-prose h4 {
+  font-family: 'Quantico', 'Space Grotesk', system-ui, sans-serif;
+  color: #12212e;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.targo-prose a {
+  color: #0a6f8c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.targo-prose a:hover {
+  color: #15bcdf;
+}
+
+.targo-prose :is(img, video, table, pre) {
+  max-width: 100%;
+}
+
+/* ---- focus-visible default ---- */
+.targo-focus:focus-visible,
+.targo-btn:focus-visible,
+.targo-field:focus-visible,
+.targo-card:focus-visible {
+  outline: 2px solid #15bcdf;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---- reduced-motion-safe defaults ---- */
+@media (prefers-reduced-motion: reduce) {  .targo-btn,
+  .targo-card {
+    transition: none;
+  }
+  .targo-btn:hover,
+  .targo-card:hover {
+    transform: none;
+  }
+}
+
+/* C6 a11y gate (WCAG 2.5.8): every control target is at least 24x24px.
+   min-height/min-width have no effect on non-replaced inline boxes, so
+   links inside running text keep the inline exception automatically. */
+a,
+button {
+  min-height: 24px;
+  min-width: 24px;
+}
+/* Footer links sit inline inside list items, where min-height cannot
+   apply: blockify them so the 24px gate holds (vertical rhythm kept by
+   the surrounding space-y stack). */
+footer a {
+  display: inline-block;
+}
+} /* end @layer components */

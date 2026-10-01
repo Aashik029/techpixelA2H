@@ -1,0 +1,268 @@
+- generic [ref=e3]:
+  - main [ref=e4]:
+    - region "Hero" [ref=e5]:
+      - generic [ref=e6]:
+        - link "Tech Pixel A2H — home" [ref=e7] [cursor=pointer]:
+          - /url: "#home"
+          - generic [ref=e10]: a2h
+        - navigation "Primary" [ref=e11]:
+          - link "Home" [ref=e12] [cursor=pointer]:
+            - /url: "#home"
+          - link "About" [ref=e13] [cursor=pointer]:
+            - /url: "#about"
+          - link "Services" [ref=e14] [cursor=pointer]:
+            - /url: "#services"
+          - link "Work" [ref=e15] [cursor=pointer]:
+            - /url: "#work"
+          - link "Contact us" [ref=e16] [cursor=pointer]:
+            - /url: "#contact"
+        - link "Contact us" [ref=e17] [cursor=pointer]:
+          - /url: "#contact"
+      - heading "Building The Platform For Your Growth" [level=1] [ref=e21]:
+        - generic [ref=e22]: Building
+        - generic [ref=e23]: The
+        - generic [ref=e24]: Platform
+        - generic [ref=e25]: For
+        - generic [ref=e26]: Your
+        - generic [ref=e27]: Growth
+      - link "Get started" [ref=e29] [cursor=pointer]:
+        - /url: https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!%20I%20want%20to%20get%20started%20with%20a%20project.
+    - region "About" [ref=e31]:
+      - generic [ref=e32]:
+        - heading "About Business" [level=2] [ref=e33]:
+          - generic [ref=e34]: About
+          - generic [ref=e35]: Business
+        - paragraph [ref=e36]: Tech Pixel A2H builds the digital foundation modern businesses rely on. From business websites to AI automation, design and marketing, we make sure your business gets online, gets automated, and gets customers. 25+ projects delivered, zero surprises.
+        - link "Learn more" [ref=e37] [cursor=pointer]:
+          - /url: https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!%20I%20want%20to%20learn%20more%20about%20your%20services.
+    - region "Services" [ref=e41]:
+      - generic [ref=e42]:
+        - paragraph [ref=e43]: What we do
+        - heading "Our Services" [level=2] [ref=e44]: OurServices
+        - paragraph [ref=e45]: Five core services, one team. Pick what you need now — add more as you grow.
+        - generic [ref=e46]:
+          - article [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: "01"
+              - generic [ref=e50]: Most requested
+            - heading "Web Development" [level=3] [ref=e51]
+            - paragraph [ref=e52]: Business websites, portfolios, landing pages and e-commerce stores. Fast, mobile-first, and built to convert visitors into customers.
+            - link "Enquire about Web Development" [ref=e53] [cursor=pointer]:
+              - /url: https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!%20I'd%20like%20to%20start%20a%20project.
+              - text: Enquire
+              - generic [aria-hidden] [ref=e54]: →
+          - article [ref=e55]:
+            - generic [ref=e56]: "02"
+            - heading "AI Automation" [level=3] [ref=e58]
+            - paragraph [ref=e59]: WhatsApp bots, lead qualification, follow-up sequences and business reports — automation that runs your routine work while you sleep.
+            - link "Enquire about AI Automation" [ref=e60] [cursor=pointer]:
+              - /url: https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!%20I'd%20like%20to%20start%20a%20project.
+              - text: Enquire
+              - generic [aria-hidden] [ref=e61]: →
+          - article [ref=e62]:
+            - generic [ref=e63]: "03"
+            - heading "Poster Design" [level=3] [ref=e65]
+            - paragraph [ref=e66]: Festival creatives, offer posters, event flyers and brand kits that stop the scroll.
+            - link "Enquire about Poster Design" [ref=e67] [cursor=pointer]:
+              - /url: https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!%20I'd%20like%20to%20start%20a%20project.
+              - text: Enquire
+              - generic [aria-hidden] [ref=e68]: →
+          - article [ref=e69]:
+            - generic [ref=e70]: "04"
+            - heading "Content Creation" [level=3] [ref=e72]
+            - paragraph [ref=e73]: Product videos, reels, business profiles and presentation decks that tell your story.
+            - link "Enquire about Content Creation" [ref=e74] [cursor=pointer]:
+              - /url: https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!%20I'd%20like%20to%20start%20a%20project.
+              - text: Enquire
+              - generic [aria-hidden] [ref=e75]: →
+          - article [ref=e76]:
+            - generic [ref=e77]: "05"
+            - heading "Digital Marketing" [level=3] [ref=e79]
+            - paragraph [ref=e80]: SEO, social media and WhatsApp campaigns that bring a steady flow of new customers.
+            - link "Enquire about Digital Marketing" [ref=e81] [cursor=pointer]:
+              - /url: https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!%20I'd%20like%20to%20start%20a%20project.
+              - text: Enquire
+              - generic [aria-hidden] [ref=e82]: →
+          - article [ref=e83]:
+            - generic [ref=e84]:
+              - text: +
+              - heading "Not sure where to start?" [level=3] [ref=e85]: Not surewhere to start?
+              - paragraph [ref=e86]: Tell us about your business — we'll recommend the right mix and reply within 24 hours.
+            - link "Get free advice" [ref=e87] [cursor=pointer]:
+              - /url: "#contact"
+              - text: Get free advice
+              - generic [aria-hidden] [ref=e88]: →
+    - region "Selected work" [ref=e89]:
+      - generic [ref=e90]:
+        - paragraph [ref=e91]: Selected work
+        - generic [ref=e92]:
+          - heading "Our Work" [level=2] [ref=e93]: OurWork
+          - paragraph [ref=e94]: A sample of websites, designs, and campaigns we've shipped for real businesses.
+        - generic [ref=e95]:
+          - article [ref=e96]:
+            - generic [aria-hidden] [ref=e97]:
+              - generic [ref=e98]: "01"
+              - generic [ref=e99]: E-commerce Website
+            - generic [ref=e100]:
+              - heading "Local Store, Online Overnight" [level=3] [ref=e101]
+              - paragraph [ref=e102]: A complete online store for a neighborhood retailer — product catalog, WhatsApp ordering, and festival offer banners.
+          - article [ref=e103]:
+            - generic [aria-hidden] [ref=e104]:
+              - generic [ref=e105]: "02"
+              - generic [ref=e106]: B2B Web Application
+            - generic [ref=e107]:
+              - heading "One Workspace for the Whole Team" [level=3] [ref=e108]
+              - paragraph [ref=e109]: A shared dashboard where a growing business tracks projects, clients, and daily tasks — all in one place.
+          - article [ref=e110]:
+            - generic [aria-hidden] [ref=e111]:
+              - generic [ref=e112]: "03"
+              - generic [ref=e113]: HRMS Platform
+            - generic [ref=e114]:
+              - heading "HR Without the Spreadsheets" [level=3] [ref=e115]
+              - paragraph [ref=e116]: Attendance, leave requests, and employee records in a clean visual system — concept interface for modern HR teams.
+          - article [ref=e117]:
+            - generic [aria-hidden] [ref=e118]:
+              - generic [ref=e119]: "04"
+              - generic [ref=e120]: Poster Pack
+            - generic [ref=e121]:
+              - heading "Festival Season, Fully Designed" [level=3] [ref=e122]
+              - paragraph [ref=e123]: A complete set of offer posters, social creatives, and banners for a retail brand’s festival campaign.
+          - article [ref=e124]:
+            - generic [aria-hidden] [ref=e125]:
+              - generic [ref=e126]: "05"
+              - generic [ref=e127]: SEO Blog System
+            - generic [ref=e128]:
+              - heading "Content That Brings Customers" [level=3] [ref=e129]
+              - paragraph [ref=e130]: A search-optimized blog and content engine that turns everyday questions into a steady stream of new enquiries.
+          - article [ref=e131]:
+            - generic [aria-hidden] [ref=e132]:
+              - generic [ref=e133]: "06"
+              - generic [ref=e134]: Growth Campaign
+            - generic [ref=e135]:
+              - heading "From Invisible to Booked Out" [level=3] [ref=e136]
+              - paragraph [ref=e137]: Social media creatives, WhatsApp follow-ups, and review engine — a full local growth loop for a service business.
+        - link "View all projects" [ref=e139] [cursor=pointer]:
+          - /url: https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!%20I'd%20like%20to%20see%20more%20of%20your%20work.
+          - text: View all projects
+          - generic [aria-hidden] [ref=e140]: →
+    - region "How we work" [ref=e141]:
+      - generic [ref=e142]:
+        - paragraph [ref=e143]: How we work
+        - heading "Simple Process" [level=2] [ref=e144]: SimpleProcess
+        - paragraph [ref=e145]: No surprises. You always know what happens next.
+        - generic [ref=e146]:
+          - generic [ref=e148]:
+            - generic [ref=e149]: "01"
+            - heading "Discover" [level=3] [ref=e150]
+            - paragraph [ref=e151]: We start with a conversation about your business, your customers, and what success looks like.
+            - list [ref=e152]:
+              - listitem [ref=e153]: Free consultation call
+              - listitem [ref=e155]: Requirement mapping
+              - listitem [ref=e157]: Honest timeline & quote
+          - generic [ref=e159]:
+            - generic [ref=e160]: "02"
+            - heading "Plan" [level=3] [ref=e161]
+            - paragraph [ref=e162]: You approve the direction before we build — designs, structure, and content plan, all shared upfront.
+            - list [ref=e163]:
+              - listitem [ref=e164]: Design previews
+              - listitem [ref=e166]: Content outline
+              - listitem [ref=e168]: Fixed pricing
+          - generic [ref=e170]:
+            - generic [ref=e171]: "03"
+            - heading "Build" [level=3] [ref=e172]
+            - paragraph [ref=e173]: We design, develop, and test everything — with regular updates so you always know where things stand.
+            - list [ref=e174]:
+              - listitem [ref=e175]: Weekly progress updates
+              - listitem [ref=e177]: Preview links to review
+              - listitem [ref=e179]: Revisions included
+          - generic [ref=e181]:
+            - generic [ref=e182]: "04"
+            - heading "Deliver & Support" [level=3] [ref=e183]
+            - paragraph [ref=e184]: Launch day is just the start. Training, documentation, and ongoing support keep you confident.
+            - list [ref=e185]:
+              - listitem [ref=e186]: Launch + training
+              - listitem [ref=e188]: Free support window
+              - listitem [ref=e190]: Growth guidance
+    - region "Start a project" [ref=e192]:
+      - generic [ref=e193]:
+        - paragraph [ref=e194]: Start a project
+        - heading "Let's Talk" [level=2] [ref=e195]: Let'sTalk
+        - paragraph [ref=e196]: Tell us about your project — we'll reply within 24 hours with next steps.
+        - generic [ref=e197]:
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - generic [ref=e201]:
+                - generic [ref=e202]: Your name *
+                - textbox "Your name *" [ref=e203]:
+                  - /placeholder: e.g. Priya Sharma
+              - generic [ref=e204]:
+                - generic [ref=e205]: Phone / WhatsApp *
+                - textbox "Phone / WhatsApp *" [ref=e206]:
+                  - /placeholder: +91 …
+            - generic [ref=e207]:
+              - generic [ref=e208]: What do you need? *
+              - group "What do you need? *" [ref=e209]:
+                - button "Web Development" [ref=e210]
+                - button "AI Automation" [ref=e212]
+                - button "Poster Design" [ref=e214]
+                - button "Content Creation" [ref=e216]
+                - button "Digital Marketing" [ref=e218]
+                - button "Not sure yet" [ref=e220]
+            - generic [ref=e222]:
+              - generic [ref=e223]: Project details (optional)
+              - textbox "Project details (optional)" [ref=e224]:
+                - /placeholder: What are you trying to achieve? Any references or must-haves?
+            - button "Send via WhatsApp" [ref=e225]:
+              - text: Send via WhatsApp
+              - generic [aria-hidden] [ref=e226]: →
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - paragraph [ref=e229]: Prefer to reach out directly?
+              - list [ref=e230]:
+                - listitem [ref=e231]:
+                  - paragraph [ref=e232]: Phone
+                  - link "+91 95977 36185" [ref=e233] [cursor=pointer]:
+                    - /url: tel:+919597736185
+                - listitem [ref=e234]:
+                  - paragraph [ref=e235]: Email
+                  - link "techpixela2h@gmail.com" [ref=e236] [cursor=pointer]:
+                    - /url: mailto:techpixela2h@gmail.com
+                - listitem [ref=e237]:
+                  - paragraph [ref=e238]: Location
+                  - paragraph [ref=e239]: India
+            - link "Chat on WhatsApp" [ref=e240] [cursor=pointer]:
+              - /url: https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!%20I%20have%20a%20project%20in%20mind.
+              - text: Chat on WhatsApp
+              - generic [aria-hidden] [ref=e241]: →
+  - contentinfo "Footer" [ref=e242]:
+    - generic [ref=e243]:
+      - generic [ref=e244]:
+        - generic [ref=e245]:
+          - paragraph [ref=e246]:
+            - generic [ref=e247]: a2h
+            - generic [ref=e248]: Tech Pixel A2H
+          - paragraph [ref=e249]: Innovate. Develop. Elevate.
+          - paragraph [ref=e250]: Web development, AI automation, design, content and marketing — one team for everything your business needs online.
+        - navigation "Contact details" [ref=e251]:
+          - paragraph [ref=e252]: Get in touch
+          - list [ref=e253]:
+            - listitem [ref=e254]:
+              - link "+91 95977 36185" [ref=e255] [cursor=pointer]:
+                - /url: tel:+919597736185
+            - listitem [ref=e256]:
+              - link "techpixela2h@gmail.com" [ref=e257] [cursor=pointer]:
+                - /url: mailto:techpixela2h@gmail.com
+            - listitem [ref=e258]: India
+        - navigation "Social links" [ref=e259]:
+          - paragraph [ref=e260]: Follow us
+          - list [ref=e261]:
+            - listitem [ref=e262]: Instagram →
+            - listitem [ref=e263]: LinkedIn →
+            - listitem [ref=e264]:
+              - link "WhatsApp →" [ref=e265] [cursor=pointer]:
+                - /url: https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!
+      - generic [ref=e266]:
+        - paragraph [ref=e267]: © 2026 Tech Pixel A2H. All rights reserved.
+        - paragraph [ref=e268]:
+          - generic [ref=e269]: Privacy Policy
+          - generic [ref=e270]: Terms of Service

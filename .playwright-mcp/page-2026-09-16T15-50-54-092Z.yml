@@ -1,0 +1,283 @@
+- generic [ref=f2e2]:
+  - navigation [ref=f2e3]:
+    - generic [ref=f2e4]:
+      - generic [ref=f2e5]: A2H
+      - generic [ref=f2e6]: TECH PIXELA2H
+    - link "Let's Talk →" [ref=f2e7] [cursor=pointer]:
+      - /url: "#contact"
+      - text: Let's Talk
+      - generic [ref=f2e8]: →
+  - generic [ref=f2e9]:
+    - generic [ref=f2e10]:
+      - generic [ref=f2e11]: DIGITAL SOLUTIONS / TECH PIXEL A2H
+      - heading "We turn ideas into digital experiences." [level=1] [ref=f2e12]: We turn ideasinto digitalexperiences.
+      - paragraph [ref=f2e13]: Web development, AI automation, posters & PPTs, content and marketing — built around your business.
+      - generic [ref=f2e14]:
+        - link "Start a Project →" [ref=f2e15] [cursor=pointer]:
+          - /url: "#contact"
+          - text: Start a Project
+          - generic [ref=f2e16]: →
+        - link "View Our Work →" [ref=f2e17] [cursor=pointer]:
+          - /url: "#work"
+          - text: View Our Work
+          - generic [ref=f2e18]: →
+    - generic [ref=f2e20]:
+      - generic [ref=f2e21]: techpixela2h.com/dashboard
+      - generic [ref=f2e26]:
+        - generic [ref=f2e27]: ◉
+        - generic [ref=f2e29]:
+          - heading [level=3] [ref=f2e30]:
+            - text: AI-Powered
+            - emphasis [ref=f2e31]: E-Commerce
+            - text: Engine
+          - paragraph [ref=f2e32]: Improve sales with real-time insights and seamless shopping experiences.
+          - generic [ref=f2e33]: Explore Dashboard
+          - generic [ref=f2e34]:
+            - generic [ref=f2e35]: Total Orders$68,420
+            - generic [ref=f2e36]: Users2,340
+            - generic [ref=f2e37]: Growth+24.5%
+        - generic [ref=f2e42]:
+          - generic [ref=f2e43]:
+            - text: Total Revenue
+            - generic [ref=f2e44]: $69,420
+          - generic [ref=f2e45]:
+            - generic [ref=f2e46]: ⌾
+            - generic [ref=f2e47]:
+              - paragraph [ref=f2e48]: Premium Headphones
+              - text: $27,120
+          - generic [ref=f2e49]:
+            - generic [ref=f2e50]: ◍
+            - generic [ref=f2e51]:
+              - paragraph [ref=f2e52]: Smart Watch
+              - text: $19,210
+          - generic [ref=f2e53]:
+            - generic [ref=f2e54]: ⬢
+            - generic [ref=f2e55]:
+              - paragraph [ref=f2e56]: Camera Lens
+              - text: $14,320
+          - generic [ref=f2e57]:
+            - generic [ref=f2e58]: ⬣
+            - generic [ref=f2e59]:
+              - paragraph [ref=f2e60]: Gaming Controller
+              - text: $14,241
+  - generic [ref=f2e62]:
+    - generic [ref=f2e63]: WEB DEVELOPMENT
+    - generic [ref=f2e64]: •
+    - generic [ref=f2e65]: AI AUTOMATION
+    - generic [ref=f2e66]: •
+    - generic [ref=f2e67]: POSTER DESIGNING & PPT CREATION
+    - generic [ref=f2e68]: •
+    - generic [ref=f2e69]: CONTENT CREATION
+    - generic [ref=f2e70]: •
+    - generic [ref=f2e71]: DIGITAL MARKETING
+    - generic [ref=f2e72]: •
+    - generic [ref=f2e73]: WEB DEVELOPMENT
+    - generic [ref=f2e74]: •
+    - generic [ref=f2e75]: AI AUTOMATION
+    - generic [ref=f2e76]: •
+    - generic [ref=f2e77]: POSTER DESIGNING & PPT CREATION
+    - generic [ref=f2e78]: •
+    - generic [ref=f2e79]: CONTENT CREATION
+    - generic [ref=f2e80]: •
+    - generic [ref=f2e81]: DIGITAL MARKETING
+    - generic [ref=f2e82]: •
+  - generic [ref=f2e85]:
+    - heading "Technology is only useful when it solves a real problem." [level=2] [ref=f2e86]: Technology isonly useful when itsolves a real problem.
+    - paragraph [ref=f2e87]: We combine technology, creativity and strategy to build digital solutions that are not just modern, but meaningful. Solutions that help businesses grow, automate and deliver better experiences.
+  - generic [ref=f2e94]:
+    - generic [ref=f2e95]: WHAT WE DO
+    - generic [ref=f2e96]:
+      - heading "Digital solutions built for growth." [level=2] [ref=f2e97]: Digital solutionsbuilt for growth.
+      - link "View All Services →" [ref=f2e98] [cursor=pointer]:
+        - /url: "#"
+        - text: View All Services
+        - generic [ref=f2e99]: →
+    - generic [ref=f2e100]:
+      - generic [ref=f2e101]:
+        - generic [ref=f2e102]:
+          - generic [ref=f2e103]: "01"
+          - generic [ref=f2e104]: ◈
+          - generic [ref=f2e105]:
+            - generic [ref=f2e106]: Web Development
+            - generic [ref=f2e107]: Modern, responsive and high-performance websites that represent your brand.
+          - generic [ref=f2e108]: →
+        - generic [ref=f2e109]:
+          - generic [ref=f2e110]: "02"
+          - generic [ref=f2e111]: ⬣
+          - generic [ref=f2e112]:
+            - generic [ref=f2e113]: AI Automation
+            - generic [ref=f2e114]: Automate and improve work processes using intelligent AI solutions.
+          - generic [ref=f2e115]: →
+        - generic [ref=f2e116]:
+          - generic [ref=f2e117]: "03"
+          - generic [ref=f2e118]: ✦
+          - generic [ref=f2e119]:
+            - generic [ref=f2e120]: Poster Designing and PPT Creation
+            - generic [ref=f2e121]: Eye-catching posters and professional presentations that communicate clearly.
+          - generic [ref=f2e122]: →
+        - generic [ref=f2e123]:
+          - generic [ref=f2e124]: "04"
+          - generic [ref=f2e125]: ⬢
+          - generic [ref=f2e126]:
+            - generic [ref=f2e127]: Content Creation
+            - generic [ref=f2e128]: Engaging content that tells your story and connects with your audience.
+          - generic [ref=f2e129]: →
+        - generic [ref=f2e130]:
+          - generic [ref=f2e131]: "05"
+          - generic [ref=f2e132]: ◐
+          - generic [ref=f2e133]:
+            - generic [ref=f2e134]: Digital Marketing
+            - generic [ref=f2e135]: Strategies and campaigns that help you reach the right audience.
+          - generic [ref=f2e136]: →
+      - generic [ref=f2e137]:
+        - generic [ref=f2e139]:
+          - generic [ref=f2e140]: Design, contentand code - done for you.
+          - generic [ref=f2e141]:
+            - generic [ref=f2e142]: UI/UX Ready
+            - generic [ref=f2e143]: Learn More
+        - generic [ref=f2e151]:
+          - text: What we deliver
+          - list [ref=f2e152]:
+            - listitem [ref=f2e153]: ✓ Web Development
+            - listitem [ref=f2e154]: ✓ AI Automation
+            - listitem [ref=f2e155]: ✓ Posters & PPT Creation
+            - listitem [ref=f2e156]: ✓ Content Creation
+  - generic [ref=f2e157]:
+    - generic [ref=f2e158]: SELECTED WORK
+    - generic [ref=f2e159]:
+      - heading "Ideas we've turned into reality." [level=2] [ref=f2e160]: Ideas we'veturned into reality.
+      - link "View All Projects →" [ref=f2e161] [cursor=pointer]:
+        - /url: "#"
+        - text: View All Projects
+        - generic [ref=f2e162]: →
+    - generic [ref=f2e163]:
+      - generic [ref=f2e164]:
+        - paragraph [ref=f2e167]: AI-PoweredE-CommerceEngine
+        - generic [ref=f2e171]:
+          - generic [ref=f2e172]:
+            - text: AI-Powered E-Commerce Engine
+            - generic [ref=f2e173]:
+              - generic [ref=f2e174]: Web Development
+              - generic [ref=f2e175]: AI Automation
+              - generic [ref=f2e176]: E-commerce
+          - generic [ref=f2e177]: →
+      - generic [ref=f2e178]:
+        - generic [ref=f2e181]:
+          - paragraph [ref=f2e182]: Real-time collaborationfor modern teams
+          - generic [ref=f2e183]:
+            - generic [ref=f2e184]: Get Started
+            - generic [ref=f2e185]: Live Demo
+        - generic [ref=f2e190]:
+          - generic [ref=f2e191]:
+            - text: Real-Time B2B Workspace
+            - generic [ref=f2e192]:
+              - generic [ref=f2e193]: Web Development
+              - generic [ref=f2e194]: Content Creation
+              - generic [ref=f2e195]: Digital Marketing
+          - generic [ref=f2e196]: →
+      - generic [ref=f2e197]:
+        - paragraph [ref=f2e200]: HR ManagementMade Simple
+        - generic [ref=f2e205]:
+          - generic [ref=f2e206]:
+            - text: Enterprise HRMS System
+            - generic [ref=f2e207]:
+              - generic [ref=f2e208]: Web Development
+              - generic [ref=f2e209]: AI Automation
+              - generic [ref=f2e210]: Content Creation
+          - generic [ref=f2e211]: →
+  - generic [ref=f2e213]:
+    - generic [ref=f2e214]:
+      - generic [ref=f2e215]: WHO WE ARE
+      - heading "Built with technology. Designed for people." [level=2] [ref=f2e216]: Built with technology.Designed for people.
+      - paragraph [ref=f2e217]: Tech Pixel A2H is a digital solutions company focused on building practical, scalable and beautiful digital products. We work closely with our clients to understand their challenges and build solutions that make a real impact.
+      - link "More About Us →" [ref=f2e219] [cursor=pointer]:
+        - /url: "#"
+        - text: More About Us
+        - generic [ref=f2e220]: →
+    - generic [ref=f2e221]:
+      - generic [ref=f2e222]:
+        - generic [ref=f2e223]: ❖
+        - generic [ref=f2e224]: Creative
+        - text: Thinking
+      - generic [ref=f2e225]:
+        - generic [ref=f2e226]: ▣
+        - generic [ref=f2e227]: Modern
+        - text: Technology
+      - generic [ref=f2e228]:
+        - generic [ref=f2e229]: ◍
+        - generic [ref=f2e230]: Client
+        - text: Focused
+      - generic [ref=f2e231]:
+        - generic [ref=f2e232]: ⬔
+        - generic [ref=f2e233]: Reliable
+        - text: Delivery
+  - generic [ref=f2e235]:
+    - generic [ref=f2e236]:
+      - generic [ref=f2e237]: OUR PROCESS
+      - heading "From idea to successful solution." [level=2] [ref=f2e238]: From idea tosuccessful solution.
+    - generic [ref=f2e239]:
+      - generic [ref=f2e240]:
+        - generic [ref=f2e241]: "01"
+        - generic [ref=f2e242]: Discover
+        - generic [ref=f2e243]: We understand your goals, audience and challenges.
+      - generic [ref=f2e244]:
+        - generic [ref=f2e245]: "02"
+        - generic [ref=f2e246]: Plan
+        - generic [ref=f2e247]: We create a strategy and roadmap for the solution.
+      - generic [ref=f2e248]:
+        - generic [ref=f2e249]: "03"
+        - generic [ref=f2e250]: Build
+        - generic [ref=f2e251]: We design, develop and test with precision.
+      - generic [ref=f2e252]:
+        - generic [ref=f2e253]: "04"
+        - generic [ref=f2e254]: Deliver
+        - generic [ref=f2e255]: We launch and support your digital product.
+  - generic [ref=f2e256]:
+    - generic [ref=f2e257]:
+      - generic [ref=f2e258]: HAVE AN IDEA?
+      - heading "Let's build something great together." [level=2] [ref=f2e259]: Let's build somethinggreat together.
+      - paragraph [ref=f2e260]: Tell us about your project and let's createsomething amazing.
+    - generic [ref=f2e261]:
+      - link "Start a Project →" [ref=f2e262] [cursor=pointer]:
+        - /url: "#contact"
+        - text: Start a Project
+        - generic [ref=f2e263]: →
+      - generic [ref=f2e264]: Or
+      - link "◉ Talk on WhatsApp ◉" [ref=f2e265] [cursor=pointer]:
+        - /url: "#"
+  - contentinfo [ref=f2e266]:
+    - generic [ref=f2e267]:
+      - generic [ref=f2e268]:
+        - generic [ref=f2e269]: A2H
+        - generic [ref=f2e270]: TECH PIXEL
+      - paragraph [ref=f2e271]: Turning Ideas IntoDigital Reality.
+      - generic [ref=f2e272]:
+        - generic [ref=f2e273]: ◉
+        - generic [ref=f2e274]: ◎
+        - generic [ref=f2e275]: in
+    - generic [ref=f2e276]:
+      - heading "Company" [level=4] [ref=f2e277]
+      - list [ref=f2e278]:
+        - listitem [ref=f2e279]: Home
+        - listitem [ref=f2e280]: About Us
+        - listitem [ref=f2e281]: Our Process
+        - listitem [ref=f2e282]: Careers
+        - listitem [ref=f2e283]: Contact
+    - generic [ref=f2e284]:
+      - heading "Services" [level=4] [ref=f2e285]
+      - list [ref=f2e286]:
+        - listitem [ref=f2e287]: Web Development
+        - listitem [ref=f2e288]: AI Automation
+        - listitem [ref=f2e289]: Poster Designing & PPT Creation
+        - listitem [ref=f2e290]: Content Creation
+        - listitem [ref=f2e291]: Digital Marketing
+    - generic [ref=f2e292]:
+      - heading "Contact" [level=4] [ref=f2e293]
+      - list [ref=f2e294]:
+        - listitem [ref=f2e295]: ✆ +91 9597736185
+        - listitem [ref=f2e296]: ✉ techpixela2h@gmail.com
+        - listitem [ref=f2e297]: ◉ India
+        - listitem [ref=f2e298]: ◉ Available on WhatsApp
+  - generic [ref=f2e299]:
+    - generic [ref=f2e300]: © 2024 Tech Pixel A2H. All rights reserved.
+    - generic [ref=f2e301]: Privacy Policy Terms & Conditions

@@ -1,0 +1,26 @@
+F3 internal link-integrity crawl
+Origin: http://127.0.0.1:4174 (vite preview over build/)
+Routes visited: 17
+Unique internal hrefs: 17
+
+HREFS:
+/
+/about
+/privacy
+/services
+/services/ai-automation
+/services/content-creation
+/services/digital-marketing
+/services/poster-design
+/services/web-development
+/terms
+/work
+/work/festival-posters
+/work/growth-campaign
+/work/hrms-concept
+/work/local-store-online
+/work/seo-blog-system
+/work/team-workspace
+
+FAILURES (non-200):
+(none)
