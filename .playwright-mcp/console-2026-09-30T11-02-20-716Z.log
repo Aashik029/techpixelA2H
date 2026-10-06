@@ -1,2 +1,0 @@
-[   34168ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5174/services/nope:0
-[   83698ms] [WARNING] Ignoring Event: localhost @ https://plausible.io/js/script.js:0

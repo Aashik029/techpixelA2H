@@ -5,3 +5,9 @@ build/
 test-results/
 playwright-report/
 .omo/
+.playwright-mcp/
+mcp-server.log
+*.log
+build1.txt
+check*.txt
+.codegraph/
