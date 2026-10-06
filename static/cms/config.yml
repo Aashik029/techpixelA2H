@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+# Sveltia CMS configuration — Tech Pixel A2H
+# Serves the /cms/ admin UI. Collections map 1:1 onto src/lib/content/data/*.
+# OWNER ACTION: replace '<OWNER>/<REPO>' with the real GitHub repo before editors sign in.
+backend:
+  name: github
+  repo: 'Aashik029/techpixelA2H'
+  branch: main
+  auth_methods: [token]
+media_folder: static/media
+public_folder: /media
+collections:
+  - name: services
+    label: Services
+    folder: src/lib/content/data/services
+    extension: json
+    format: json
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Slug', name: slug, widget: string }
+      - { label: 'Number', name: num, widget: string }
+      - { label: 'Title', name: title, widget: string }
+      - { label: 'Short description', name: description, widget: text }
+      - { label: 'Tag', name: tag, widget: string, required: false }
+      - { label: 'Deliverables', name: deliverables, widget: list, field: { label: Item, name: item, widget: string } }
+      - { label: 'Detail', name: detail, widget: text }
+  - name: work
+    label: Work
+    folder: src/lib/content/data/work
+    extension: json
+    format: json
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Slug', name: slug, widget: string }
+      - { label: 'Category', name: cat, widget: string }
+      - { label: 'Title', name: title, widget: string }
+      - { label: 'Summary', name: summary, widget: text }
+      - { label: 'Disclosure', name: disclosure, widget: string, hint: "Keep honest: 'Sample work' or 'Concept work'. Never invent client names or metrics." }
+      - { label: 'Body', name: body, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+  - name: team
+    label: Team
+    folder: src/lib/content/data/team
+    extension: json
+    format: json
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Slug', name: slug, widget: string }
+      - { label: 'Name', name: name, widget: string }
+      - { label: 'Role', name: role, widget: string }
+      - { label: 'Bio', name: bio, widget: text }
+  - name: process
+    label: Process
+    folder: src/lib/content/data/process
+    extension: json
+    format: json
+    create: false
+    delete: false
+    fields:
+      - { label: 'Step number', name: num, widget: string }
+      - { label: 'Title', name: title, widget: string }
+      - { label: 'Description', name: description, widget: text }
+  - name: faq
+    label: FAQs
+    folder: src/lib/content/data/faq
+    extension: json
+    format: json
+    create: false
+    delete: false
+    fields:
+      - { label: 'Question', name: question, widget: string }
+      - { label: 'Answer', name: answer, widget: text }

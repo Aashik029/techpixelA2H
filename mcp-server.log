@@ -55,3 +55,20 @@
 [2026-10-01T10:32:42.481Z] WebSocket server error: listen EADDRINUSE: address already in use :::23456
 [2026-10-01T10:32:42.481Z] MCP Browser Server connected to transport
 [2026-10-01T10:32:42.719Z] Handling tools/list request
+[2026-10-05T10:11:28.887Z] --- SERVER CONSTRUCTOR START ---
+[2026-10-05T10:11:28.889Z] Config: {"name":"Browser-Core-MCP","version":"0.0.4"}
+[2026-10-05T10:11:28.892Z] WebSocket server started on port 23456
+[2026-10-05T10:11:28.900Z] WebSocket server error: listen EADDRINUSE: address already in use :::23456
+[2026-10-05T10:11:28.900Z] MCP Browser Server connected to transport
+[2026-10-05T10:11:28.915Z] Handling tools/list request
+[2026-10-05T15:48:34.362Z] --- SERVER CONSTRUCTOR START ---
+[2026-10-05T15:48:34.363Z] Config: {"name":"Browser-Core-MCP","version":"0.0.4"}
+[2026-10-05T15:48:34.366Z] WebSocket server started on port 23456
+[2026-10-05T15:48:34.371Z] MCP Browser Server connected to transport
+[2026-10-05T15:48:34.378Z] Handling tools/list request
+[2026-10-06T07:58:23.028Z] --- SERVER CONSTRUCTOR START ---
+[2026-10-06T07:58:23.029Z] Config: {"name":"Browser-Core-MCP","version":"0.0.4"}
+[2026-10-06T07:58:23.032Z] WebSocket server started on port 23456
+[2026-10-06T07:58:23.040Z] WebSocket server error: listen EADDRINUSE: address already in use :::23456
+[2026-10-06T07:58:23.041Z] MCP Browser Server connected to transport
+[2026-10-06T07:58:23.083Z] Handling tools/list request

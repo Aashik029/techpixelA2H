@@ -1,32 +1,36 @@
 /**
  * FAQ content module (C3). UNCONFIRMED placeholder — answers are generic
  * drafts awaiting owner confirmation. Never present as fact.
+ *
+ * Data lives in `src/lib/content/data/faq/*.json` (one entry per file,
+ * editable via Sveltia CMS at `/cms/`). This module aggregates them in
+ * filename order — output is identical to the former inline array.
  */
 export interface Faq {
   question: string;
   answer: string;
 }
 
-/** UNCONFIRMED placeholder FAQs — confirm every answer with the owner. */
-export const FAQS: Faq[] = [
-  {
-    question: 'How fast do you reply?',
-    answer:
-      'UNCONFIRMED placeholder: we aim to reply within 24 hours. Confirm with the owner.'
-  },
-  {
-    question: 'Can I start with one service and add more later?',
-    answer:
-      'UNCONFIRMED placeholder: yes — pick what you need now and add more as you grow. Confirm with the owner.'
-  },
-  {
-    question: 'How do we start?',
-    answer:
-      'UNCONFIRMED placeholder: tell us about your business via the contact section and we recommend the right mix. Confirm with the owner.'
-  },
-  {
-    question: 'Do you work with small businesses?',
-    answer:
-      'UNCONFIRMED placeholder: yes — services are scoped for growing businesses. Confirm with the owner.'
+const modules = import.meta.glob<Faq>('./data/faq/*.json', {
+  eager: true,
+  import: 'default'
+});
+
+function need(value: unknown, file: string, field: string): asserts value {
+  if (value === undefined || value === null || value === '') {
+    throw new Error(`[content] ${file}: missing required field "${field}"`);
   }
-];
+}
+
+/** UNCONFIRMED placeholder FAQs — confirm every answer with the owner. */
+export const FAQS: Faq[] = Object.keys(modules)
+  .sort()
+  .map((file) => {
+    const raw = modules[file];
+    need(raw.question, file, 'question');
+    need(raw.answer, file, 'answer');
+    return {
+      question: raw.question,
+      answer: raw.answer
+    };
+  });

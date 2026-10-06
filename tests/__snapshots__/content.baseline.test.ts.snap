@@ -1,0 +1,215 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`content baseline > FAQS matches baseline 1`] = `
+[
+  {
+    "answer": "UNCONFIRMED placeholder: we aim to reply within 24 hours. Confirm with the owner.",
+    "question": "How fast do you reply?",
+  },
+  {
+    "answer": "UNCONFIRMED placeholder: yes — pick what you need now and add more as you grow. Confirm with the owner.",
+    "question": "Can I start with one service and add more later?",
+  },
+  {
+    "answer": "UNCONFIRMED placeholder: tell us about your business via the contact section and we recommend the right mix. Confirm with the owner.",
+    "question": "How do we start?",
+  },
+  {
+    "answer": "UNCONFIRMED placeholder: yes — services are scoped for growing businesses. Confirm with the owner.",
+    "question": "Do you work with small businesses?",
+  },
+]
+`;
+
+exports[`content baseline > PROCESS matches baseline 1`] = `
+[
+  {
+    "description": "UNCONFIRMED placeholder: share what you need and we recommend the right mix of services.",
+    "num": "01",
+    "title": "Tell us about your business",
+  },
+  {
+    "description": "UNCONFIRMED placeholder: we reply with a scoped plan and timeline.",
+    "num": "02",
+    "title": "Get a plan within 24 hours",
+  },
+  {
+    "description": "UNCONFIRMED placeholder: design, build and launch with your feedback along the way.",
+    "num": "03",
+    "title": "We build and ship",
+  },
+  {
+    "description": "UNCONFIRMED placeholder: pick what you need now and add more services as you grow.",
+    "num": "04",
+    "title": "Grow from there",
+  },
+]
+`;
+
+exports[`content baseline > SERVICES matches baseline 1`] = `
+[
+  {
+    "deliverables": [
+      "Business websites",
+      "Portfolios",
+      "Landing pages",
+      "E-commerce stores",
+    ],
+    "description": "Business websites, portfolios, landing pages and e-commerce stores. Fast, mobile-first, and built to convert visitors into customers.",
+    "detail": "UNCONFIRMED placeholder: fast, mobile-first builds shaped around turning visitors into customers. Confirm scope with the owner.",
+    "num": "01",
+    "slug": "web-development",
+    "tag": "Most requested",
+    "title": "Web Development",
+  },
+  {
+    "deliverables": [
+      "WhatsApp bots",
+      "Lead qualification",
+      "Follow-up sequences",
+      "Business reports",
+    ],
+    "description": "WhatsApp bots, lead qualification, follow-up sequences and business reports — automation that runs your routine work while you sleep.",
+    "detail": "UNCONFIRMED placeholder: automation for routine work such as bots, qualification, follow-ups and reports. Confirm scope with the owner.",
+    "num": "02",
+    "slug": "ai-automation",
+    "tag": null,
+    "title": "AI Automation",
+  },
+  {
+    "deliverables": [
+      "Festival creatives",
+      "Offer posters",
+      "Event flyers",
+      "Brand kits",
+    ],
+    "description": "Festival creatives, offer posters, event flyers and brand kits that stop the scroll.",
+    "detail": "UNCONFIRMED placeholder: scroll-stopping creatives for festivals, offers, events and brand kits. Confirm scope with the owner.",
+    "num": "03",
+    "slug": "poster-design",
+    "tag": null,
+    "title": "Poster Design",
+  },
+  {
+    "deliverables": [
+      "Product videos",
+      "Reels",
+      "Business profiles",
+      "Presentation decks",
+    ],
+    "description": "Product videos, reels, business profiles and presentation decks that tell your story.",
+    "detail": "UNCONFIRMED placeholder: story-led videos, reels, profiles and decks. Confirm scope with the owner.",
+    "num": "04",
+    "slug": "content-creation",
+    "tag": null,
+    "title": "Content Creation",
+  },
+  {
+    "deliverables": [
+      "SEO",
+      "Social media",
+      "WhatsApp campaigns",
+    ],
+    "description": "SEO, social media and WhatsApp campaigns that bring a steady flow of new customers.",
+    "detail": "UNCONFIRMED placeholder: SEO, social and WhatsApp campaigns aimed at a steady flow of new customers. Confirm scope with the owner.",
+    "num": "05",
+    "slug": "digital-marketing",
+    "tag": null,
+    "title": "Digital Marketing",
+  },
+]
+`;
+
+exports[`content baseline > TEAM matches baseline 1`] = `
+[
+  {
+    "bio": "UNCONFIRMED placeholder: short founder bio to be confirmed by the owner.",
+    "name": "UNCONFIRMED — Founder name",
+    "role": "UNCONFIRMED — Founder",
+    "slug": "founder",
+  },
+  {
+    "bio": "UNCONFIRMED placeholder: short design-lead bio to be confirmed by the owner.",
+    "name": "UNCONFIRMED — Design lead name",
+    "role": "UNCONFIRMED — Design",
+    "slug": "design-lead",
+  },
+  {
+    "bio": "UNCONFIRMED placeholder: short engineering-lead bio to be confirmed by the owner.",
+    "name": "UNCONFIRMED — Engineering lead name",
+    "role": "UNCONFIRMED — Engineering",
+    "slug": "engineering-lead",
+  },
+]
+`;
+
+exports[`content baseline > WORK matches baseline 1`] = `
+[
+  {
+    "body": [
+      "A complete online store for a neighborhood retailer — product catalog, WhatsApp ordering, and festival offer banners.",
+      "Scope shown here is illustrative: catalog browsing, WhatsApp ordering, and festival offer banners.",
+    ],
+    "cat": "E-commerce Website",
+    "disclosure": "Sample work — illustrative example, not a client engagement.",
+    "slug": "local-store-online",
+    "summary": "A complete online store for a neighborhood retailer — product catalog, WhatsApp ordering, and festival offer banners.",
+    "title": "Local Store, Online Overnight",
+  },
+  {
+    "body": [
+      "A shared dashboard where a growing business tracks projects, clients, and daily tasks — all in one place.",
+      "Scope shown here is illustrative: project, client, and task tracking in one shared view.",
+    ],
+    "cat": "B2B Web Application",
+    "disclosure": "Sample work — illustrative example, not a client engagement.",
+    "slug": "team-workspace",
+    "summary": "A shared dashboard where a growing business tracks projects, clients, and daily tasks — all in one place.",
+    "title": "One Workspace for the Whole Team",
+  },
+  {
+    "body": [
+      "Attendance, leave requests, and employee records in a clean visual system — concept interface for modern HR teams.",
+      "This is a concept exploration, not a shipped client engagement.",
+    ],
+    "cat": "HRMS Concept",
+    "disclosure": "Concept work — interface concept, not shipped for a client.",
+    "slug": "hrms-concept",
+    "summary": "Attendance, leave requests, and employee records in a clean visual system — concept interface for modern HR teams.",
+    "title": "HR Without the Spreadsheets",
+  },
+  {
+    "body": [
+      "A complete set of offer posters, social creatives, and banners for a retail brand’s festival campaign.",
+      "Scope shown here is illustrative: offer posters, social creatives, and banners.",
+    ],
+    "cat": "Poster Pack",
+    "disclosure": "Sample work — illustrative example, not a client engagement.",
+    "slug": "festival-posters",
+    "summary": "A complete set of offer posters, social creatives, and banners for a retail brand’s festival campaign.",
+    "title": "Festival Season, Fully Designed",
+  },
+  {
+    "body": [
+      "A search-optimized blog and content engine that turns everyday questions into a steady stream of new enquiries.",
+      "Scope shown here is illustrative: a search-optimized blog and content setup.",
+    ],
+    "cat": "SEO Blog System",
+    "disclosure": "Sample work — illustrative example, not a client engagement.",
+    "slug": "seo-blog-system",
+    "summary": "A search-optimized blog and content engine that turns everyday questions into a steady stream of new enquiries.",
+    "title": "Content That Brings Customers",
+  },
+  {
+    "body": [
+      "Social media creatives, WhatsApp follow-ups, and review engine — a full local growth loop for a service business.",
+      "Scope shown here is illustrative: social creatives, WhatsApp follow-ups, and review prompts.",
+    ],
+    "cat": "Growth Campaign",
+    "disclosure": "Sample work — illustrative example, not a client engagement.",
+    "slug": "growth-campaign",
+    "summary": "Social media creatives, WhatsApp follow-ups, and review engine — a full local growth loop for a service business.",
+    "title": "From Invisible to Booked Out",
+  },
+]
+`;
