@@ -1,5 +1,5 @@
 import { createClient as createSupabaseClient, type SupabaseClient } from '@supabase/supabase-js';
-import { PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_PUBLISHABLE_KEY } from '$env/static/public';
+import { env } from '$env/dynamic/public';
 
 // Testable seam: pure function of its inputs. The unit probe calls this
 // directly with '' values; the singleton below is the only production caller.
@@ -18,8 +18,13 @@ export function createClient(url: string, key: string): SupabaseClient {
 // `vite build` under an empty .env. First USE throws the single clear error.
 let cached: SupabaseClient | null = null;
 
+// Dynamic (not static) env: `$env/static/public` makes `vite build` fail
+// when the vars are absent (e.g. Vercel without env configured). Dynamic
+// reads resolve at runtime, so the build/prerender always succeeds and the
+// missing-config error surfaces only on first real USE (caught -> fallback
+// in enquiries.ts). Missing vars read as undefined -> '' -> clear throw.
 export function getSupabase(): SupabaseClient {
 	if (cached) return cached;
-	cached = createClient(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_PUBLISHABLE_KEY);
+	cached = createClient(env.PUBLIC_SUPABASE_URL ?? '', env.PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? '');
 	return cached;
 }
