@@ -1,6 +1,8 @@
 <script lang="ts">
   import type { PageData } from './$types';
   import JsonLd from '$lib/components/JsonLd.svelte';
+  import TargoNav from '$lib/components/TargoNav.svelte';
+
 
   let { data }: { data: PageData } = $props();
 </script>
@@ -33,7 +35,10 @@
   crumbs={[{ name: 'Work', path: '/work' }, { name: data.entry.title, path: `/work/${data.entry.slug}` }]}
 />
 
-<section class="targo-band px-6 py-24 md:py-32" aria-label={data.entry.title}>
+<TargoNav active="work" />
+
+<main id="main" tabindex="-1">
+  <section class="targo-band px-6 py-24 md:py-32" aria-label={data.entry.title}>
   <div class="mx-auto max-w-6xl">
     <p class="targo-eyebrow">{data.entry.cat}</p>
     <h1 class="targo-title mt-4">{data.entry.title}</h1>
@@ -49,4 +54,5 @@
       <a href="/work" class="targo-btn mt-8">← Back to work</a>
     </div>
   </div>
-</section>
+  </section>
+</main>

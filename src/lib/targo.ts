@@ -26,6 +26,23 @@ export function prefersReducedMotion(): boolean {
     return false;
   }
 }
+
+/** True when the connection can't afford a multi-MB decorative video:
+ *  an explicit Save-Data toggle, or a 2G effective type. `connection` is
+ *  Chromium-only, hence the feature-detected typing. SSR-safe: false. */
+export function prefersDataSaver(): boolean {
+  if (typeof navigator === 'undefined') return false;
+  const conn = (
+    navigator as Navigator & {
+      connection?: { saveData?: boolean; effectiveType?: string };
+      mozConnection?: { saveData?: boolean; effectiveType?: string };
+      webkitConnection?: { saveData?: boolean; effectiveType?: string };
+    }
+  ).connection;
+  if (!conn) return false;
+  if (conn.saveData === true) return true;
+  return conn.effectiveType === 'slow-2g' || conn.effectiveType === '2g';
+}
 /** Shared autoplay helper for the Targo sections.
  *  Guarantees playback without any cursor interaction:
  *  - plays ASAP on canplay/loadeddata (muted + playsinline)
@@ -35,12 +52,15 @@ export function prefersReducedMotion(): boolean {
  *    until first gesture. All rejections swallowed.
  *  Reduced-motion guard (C6): when the user prefers reduced motion the
  *  video is left paused on its poster — callers render an explicit
- *  pause/play control so playback stays user-initiated. */
+ *  pause/play control so playback stays user-initiated.
+ *  Data-saver guard: on Save-Data / 2G the video is left on its poster
+ *  and the play() retry loop never starts, so not one video byte is
+ *  fetched over a metered or slow link. */
 export function armAutoplay(video: HTMLVideoElement | null) {
   if (!video || typeof document === 'undefined') return () => {};
 
-  // Reduced-motion users: never autoplay; leave the poster frame in place.
-  if (prefersReducedMotion()) {
+  // Reduced-motion / data-saver users: never autoplay; leave the poster.
+  if (prefersReducedMotion() || prefersDataSaver()) {
     try {
       video.pause();
     } catch {

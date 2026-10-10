@@ -42,7 +42,7 @@
       loop
       playsinline
       disablepictureinpicture
-      preload="metadata"
+      preload="none"
     ></video>
   </div>
   <!-- desktop-only left scrim -->

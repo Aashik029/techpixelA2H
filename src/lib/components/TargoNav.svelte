@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount, tick } from 'svelte';
   import { goto } from '$app/navigation';
-  import { prefetchVideo } from '$lib/targo';
   import { NAV_ITEMS, CONTACT_HREF, type PageId } from '$lib/content/site';
   import { initAuth, authStore, ensureViewerProfile, signOut } from '$lib/auth/store.svelte';
 
@@ -31,8 +30,6 @@
 
   const viewerLabel = $derived(authStore.viewerName || authStore.user?.email || '');
   const viewerInitial = $derived(viewerLabel.trim().charAt(0).toUpperCase() || '?');
-
-  const warmHero = () => prefetchVideo('/videos/hero.mp4');
 
   function closeMenu(returnFocus = false) {
     menuOpen = false;
@@ -168,8 +165,6 @@
     href="/"
     class="targo-logo"
     aria-label="Tech Pixel A2H — home"
-    onpointerenter={warmHero}
-    onfocus={warmHero}
   >
     <img class="targo-logo-img" src="/images/logo.png" alt="Tech Pixel A2H logo" width="1056" height="470" />
   </a>
@@ -179,9 +174,7 @@
       <a
         href={item.href}
         class:active={active === item.id}
-        aria-current={active === item.id ? 'page' : undefined}
-        onpointerenter={warmHero}
-        onfocus={warmHero}>{item.label}</a
+        aria-current={active === item.id ? 'page' : undefined}>{item.label}</a
       >
     {/each}
     {#if loggedIn}
@@ -193,8 +186,6 @@
           data-testid="nav-account"
           aria-expanded={accountOpen}
           aria-label={viewerLabel ? `Signed in as ${viewerLabel}` : 'Account menu'}
-          onpointerenter={warmHero}
-          onfocus={warmHero}
           onclick={toggleAccount}
         >
           <span class="targo-user-avatar" aria-hidden="true">{viewerInitial}</span>
@@ -209,8 +200,6 @@
               <a
                 href="/admin"
                 data-testid="nav-menu-admin"
-                onpointerenter={warmHero}
-                onfocus={warmHero}
                 onclick={() => {
                   closeAccount();
                   closeMenu();
@@ -229,8 +218,6 @@
     class="targo-contact-btn targo-contact-desktop"
     href={CONTACT_HREF}
     data-testid="nav-start-project"
-    onpointerenter={warmHero}
-    onfocus={warmHero}
   >
     <svg width="17" height="13" viewBox="0 0 17 13" fill="none" aria-hidden="true">
       <rect x="1" y="1" width="15" height="11" rx="1.5" stroke="#111" stroke-width="1.4" />
@@ -261,9 +248,7 @@
       <a
         href={item.href}
         aria-current={active === item.id ? 'page' : undefined}
-        onclick={() => closeMenu()}
-        onpointerenter={warmHero}
-        onfocus={warmHero}>{item.label}</a
+        onclick={() => closeMenu()}>{item.label}</a
       >
     {/each}
     {#if loggedIn}
@@ -272,8 +257,7 @@
           href="/admin"
           data-testid="nav-menu-admin-mobile"
           onclick={() => closeMenu()}
-          onpointerenter={warmHero}
-          onfocus={warmHero}>Admin</a
+          >Admin</a
         >
       {/if}
       <button
@@ -288,9 +272,7 @@
     <a
       href={CONTACT_HREF}
       data-testid="nav-start-project-mobile"
-      onclick={() => closeMenu()}
-      onpointerenter={warmHero}
-      onfocus={warmHero}>Start a Project</a
+      onclick={() => closeMenu()}>Start a Project</a
     >
   </nav>
 {/if}
