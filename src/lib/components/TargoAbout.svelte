@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { armAutoplay } from '$lib/targo';
+  import { armAutoplay, pickVideoSrc } from '$lib/targo';
 
   let aboutVideo: HTMLVideoElement | null = $state(null);
 
@@ -10,6 +10,11 @@
     // Offscreen video: wait until near viewport before fetching/arming
     // so the initial page load skips the ~1.8MB about.mp4. armAutoplay
     // (muted + playsinline) still drives playback once visible.
+    // preload="none" means assigning src here still costs zero bytes, so the
+    // 720p H.264 twin (228 KB vs 1835 KB) is chosen before anything can fetch.
+    if (aboutVideo) {
+      aboutVideo.src = pickVideoSrc('/videos/about.mp4', '/videos/about-mobile.mp4');
+    }
     if (typeof IntersectionObserver !== 'undefined' && aboutVideo) {
       let disarm: (() => void) | undefined;
       const io = new IntersectionObserver(

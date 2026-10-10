@@ -166,7 +166,7 @@
     class="targo-logo"
     aria-label="Tech Pixel A2H — home"
   >
-    <img class="targo-logo-img" src="/images/logo.png" alt="Tech Pixel A2H logo" width="1056" height="470" />
+    <img class="targo-logo-img" src="/images/logo.png" alt="Tech Pixel A2H logo" width="360" height="160" />
   </a>
 
   <nav class="targo-links" aria-label="Primary">

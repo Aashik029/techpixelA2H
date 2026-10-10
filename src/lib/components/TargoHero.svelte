@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { armAutoplay } from '$lib/targo';
+  import { armAutoplay, pickVideoSrc } from '$lib/targo';
 
   let heroVideo: HTMLVideoElement | null = $state(null);
 
@@ -12,6 +12,11 @@
     let disarm: (() => void) | undefined;
     let idleId: number | undefined;
     const run = () => {
+      // Swap to the 540p H.264 twin BEFORE armAutoplay calls load(), so a
+      // phone fetches the 284 KB file instead of the 3 MB 1080p HEVC one.
+      if (heroVideo) {
+        heroVideo.src = pickVideoSrc('/videos/hero.mp4', '/videos/hero-mobile.mp4');
+      }
       disarm = armAutoplay(heroVideo);
     };
     if (typeof window.requestIdleCallback === 'function') {
