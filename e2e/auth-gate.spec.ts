@@ -7,14 +7,14 @@
  *   - status flip -> row updates; sign out -> back to login
  *   - sitemap.xml -> contains no /admin URL
  *
- * FIXME: requires the /admin route (T3.2). Marked fixme until it lands —
- * un-mark when T3 lands, then this must go green.
+ * The admin area is a multi-route dashboard (T3): /admin (overview),
+ * /admin/enquiries (inbox table + detail drawer), /admin/analytics and
+ * /admin/settings. The auth gate lives in src/routes/admin/+layout.svelte,
+ * so EVERY admin route shows the sign-in form until a session exists.
  */
 import { expect, test } from '@playwright/test';
 
 test.describe('/admin auth gate + inbox', () => {
-	test.fixme(true, 'requires /admin route (T3.2) — un-mark when it lands');
-
 	test('signed out sees login only; wrong password errors', async ({ page }) => {
 		await page.goto('/admin', { waitUntil: 'networkidle' });
 		await expect(page.locator('[data-testid="admin-signin"]')).toBeVisible();
@@ -32,7 +32,9 @@ test.describe('/admin auth gate + inbox', () => {
 		const password = process.env.E2E_ADMIN_PASSWORD ?? '';
 		test.skip(!email || !password, 'Supabase E2E admin env not configured (.env)');
 
-		await page.goto('/admin', { waitUntil: 'networkidle' });
+		// The inbox now lives at /admin/enquiries; the layout gate shows the
+		// sign-in form on that route until authenticated.
+		await page.goto('/admin/enquiries', { waitUntil: 'networkidle' });
 		await page.locator('[data-testid="admin-email"]').fill(email);
 		await page.locator('[data-testid="admin-password"]').fill(password);
 		await page.locator('[data-testid="admin-signin"]').click();

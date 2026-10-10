@@ -68,7 +68,7 @@
           <a
             href="/services/{s.slug}"
             class="targo-quant mt-7 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.14em] text-[#12212e] transition-colors hover:text-[#15bcdf]"
-            aria-label="Enquire about {s.t}"
+            aria-label="View {s.t} details"
           >
             Enquire <span aria-hidden="true">→</span>
           </a>

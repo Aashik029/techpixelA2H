@@ -32,8 +32,8 @@
 	}
 </script>
 
-<form class="targo-card" onsubmit={(e) => e.preventDefault()}>
-	<h2 class="targo-quant">Admin sign in</h2>
+<form class="targo-card admin-login-card" onsubmit={(e) => e.preventDefault()}>
+	<h2 class="targo-quant admin-login-title">Admin sign in</h2>
 	<label class="targo-field-label" for="admin-email">Email</label>
 	<input
 		id="admin-email"
@@ -67,3 +67,19 @@
 		{busy ? 'Signing in…' : 'Sign in'}
 	</button>
 </form>
+
+<style>
+	/* Chamfered card clips 22px off each corner; without inner padding the
+	   heading and fields sit flush against the cut and the first glyph is
+	   sliced. Inset content past the chamfer. Scoped to the admin form only. */
+	.admin-login-card {
+		padding: 30px 28px 34px;
+	}
+	.admin-login-card .targo-field + .targo-field-label {
+		display: block;
+		margin-top: 4px;
+	}
+	.admin-login-title {
+		margin: 0 0 18px;
+	}
+</style>

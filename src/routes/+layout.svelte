@@ -10,12 +10,14 @@
   import '@fontsource/space-grotesk/700.css';
   import TargoFooter from '$lib/components/TargoFooter.svelte';
   import TargoConsent from '$lib/components/TargoConsent.svelte';
+  import { page } from '$app/state';
 
   let { children } = $props();
+  const isAdmin = $derived(page.url.pathname.startsWith('/admin'));
 </script>
 
 <div class="grain">
   {@render children()}
-  <TargoFooter />
-  <TargoConsent />
+  {#if !isAdmin}<TargoFooter />{/if}
+  {#if !isAdmin}<TargoConsent />{/if}
 </div>

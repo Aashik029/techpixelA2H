@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /admin
+Disallow: /login
 Disallow: /cms/
 
-Sitemap: https://techpixela2h.com/sitemap.xml
+Sitemap: https://tech-pixel-a2h.vercel.app/sitemap.xml

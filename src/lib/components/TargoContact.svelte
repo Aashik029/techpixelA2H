@@ -1,6 +1,9 @@
 <script lang="ts">
-  import { BASIN_ENDPOINT } from '$lib/content/site';
+  import { onMount } from 'svelte';
+  import { submitEnquiry } from '$lib/enquiries';
   import { SERVICES } from '$lib/content/services';
+  import { initAuth, authStore } from '$lib/auth/store.svelte';
+  import { getMyProfile } from '$lib/auth/profile';
 
   const WHATSAPP_BASE = 'https://wa.me/919597796186';
   const EMAIL = 'techpixela2h@gmail.com';
@@ -158,6 +161,37 @@
   let basinSent = $state(false);
   let basinFailed = $state(false);
 
+  // Signed-in prefill: run at most once, never overwrite typed input.
+  let prefilled = false;
+
+  async function prefillContact(): Promise<void> {
+    if (prefilled) return;
+    const user = authStore.user;
+    if (!user) return;
+    prefilled = true;
+    const { profile } = await getMyProfile();
+    const rawMetaName: unknown = user.user_metadata?.name;
+    const rawMetaPhone: unknown = user.user_metadata?.phone;
+    const fallbackName = typeof rawMetaName === 'string' ? rawMetaName.trim() : '';
+    const fallbackPhone = typeof rawMetaPhone === 'string' ? rawMetaPhone.trim() : '';
+    const nextName = profile?.name.trim() || fallbackName;
+    const nextPhone = profile?.phone.trim() || fallbackPhone;
+    // Only fill fields the customer has left empty.
+    if (nextName && !name.trim()) name = nextName;
+    if (nextPhone && !phone.trim()) phone = nextPhone;
+  }
+
+  onMount(() => {
+    initAuth();
+  });
+
+  $effect(() => {
+    // Re-runs when the session probe settles / auth state changes.
+    if (!authStore.ready || prefilled) return;
+    if (!authStore.isAuthenticated || !authStore.user) return;
+    void prefillContact();
+  });
+
   async function copyEmail() {
     copied = false;
     try {
@@ -272,24 +306,22 @@
       }
       submitting = true;
       try {
-        const res = await fetch(BASIN_ENDPOINT, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({
-            name: name.trim(),
-            phone: phone.trim(),
-            service,
-            answers,
-            budget,
-            timeline,
-            subject,
-            message: body
-          })
+        const ok = await submitEnquiry({
+          name: name.trim(),
+          email: authStore.user?.email ?? undefined,
+          phone: phone.trim(),
+          service,
+          answers,
+          budget,
+          timeline,
+          subject,
+          message: body,
+          user_id: authStore.user?.id ?? undefined
         });
-        if (!res.ok) throw new Error(`Basin responded ${res.status}`);
+        if (!ok) throw new Error('Supabase insert returned false');
         basinSent = true;
       } catch {
-        // Hosted capture failed: fall back to the mailto/WhatsApp path below
+        // Lead capture failed: fall back to the mailto/WhatsApp path below
         // with the composed message intact.
         basinFailed = true;
       } finally {

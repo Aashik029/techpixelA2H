@@ -69,6 +69,11 @@
   .targo-hero {
     position: relative;
     min-height: 100svh;
+    /* Full-bleed: pull the hero up so the grey band + globe start at y=0,
+       *behind* the floating glass nav (no white strip above it). The offset is
+       the nav's measured height (--targo-nav-h, set by TargoNav) plus the nav's
+       own top margin, which is not part of its border box. */
+    margin-top: calc(-1 * (var(--targo-nav-h, 96px) + clamp(12px, 2vw, 24px)));
     background: #f2f1f0;
     overflow: hidden;
     font-family: 'Quantico', 'Arial Narrow', sans-serif;
@@ -132,6 +137,13 @@
     font-size: min(clamp(34px, 7.6vw, 80px), 9.2vh);
     padding: min(clamp(40px, 9vw, 120px), 9vh) 20px min(clamp(24px, 4vw, 44px), 5vh)
       clamp(20px, 9vw, 118px);
+    /* The hero now sits at y=0 under the floating nav, so the top padding must
+       also clear it: nav height + nav top margin + the original breathing room.
+       That keeps the headline in exactly its previous absolute position while
+       guaranteeing it is never behind the glass bar. */
+    padding-top: calc(
+      var(--targo-nav-h, 96px) + clamp(12px, 2vw, 24px) + min(clamp(40px, 9vw, 120px), 9vh)
+    );
   }
   .targo-headline .t-line {
     display: block;
@@ -193,7 +205,9 @@
       display: none;
     }
     .targo-headline {
-      margin-top: 360px;
+      /* 360px clears the globe; adding the nav height + nav top margin keeps the
+         staircase below the glass bar now that the hero itself starts at y=0. */
+      margin-top: calc(360px + var(--targo-nav-h, 96px) + clamp(12px, 2vw, 24px));
       padding: 0 20px 28px 20px;
       font-size: clamp(34px, 10vw, 56px);
     }

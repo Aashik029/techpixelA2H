@@ -2,15 +2,15 @@
  * Contact-truth module (C2). Single source of truth for site URL,
  * contact channels, nav items and social links. Nav + footer consume this.
  *
- * NOTE: SITE_URL comes from Owner decision A1 and is UNCONFIRMED —
- * do not treat the domain as verified until the owner confirms it.
+ * NOTE: SITE_URL is the production deployment URL (Owner decision A1,
+ * confirmed for first Vercel deploy). Update if a custom domain is added.
  */
-export const SITE_URL_UNCONFIRMED = true;
+export const SITE_URL_UNCONFIRMED = false;
 
-/** Owner decision A1 value — UNCONFIRMED. */
-export const SITE_URL = 'https://techpixela2h.com';
+/** Owner decision A1 value — production URL, confirmed for first deploy. */
+export const SITE_URL = 'https://tech-pixel-a2h.vercel.app';
 
-export const DOMAIN = 'techpixela2h.com';
+export const DOMAIN = 'tech-pixel-a2h.vercel.app';
 
 export const PHONE_DISPLAY = '+91 95977 96186';
 export const PHONE_TEL = 'tel:+919597796186';
@@ -20,13 +20,6 @@ export const WHATSAPP_NUMBER = '919597796186';
 export const WHATSAPP_HREF =
   'https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!';
 export const LOCATION = 'India';
-
-/**
- * Hosted lead-capture endpoint (C5). Explicit placeholder — the owner pastes
- * the real Basin form key (Owner action A3). NOT blocking build: the wizard
- * POSTs via fetch and falls back to mailto/WhatsApp on failure/non-2xx.
- */
-export const BASIN_ENDPOINT = 'https://usebasin.com/api/f/{{BASIN_KEY}}';
 
 /**
  * Consent-gated analytics (C5). Plausible EU, cookieless. The script loads

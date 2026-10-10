@@ -1,7 +1,9 @@
 <script lang="ts">
   import { onMount, tick } from 'svelte';
+  import { goto } from '$app/navigation';
   import { prefetchVideo } from '$lib/targo';
   import { NAV_ITEMS, CONTACT_HREF, type PageId } from '$lib/content/site';
+  import { initAuth, authStore, ensureViewerProfile, signOut } from '$lib/auth/store.svelte';
 
   /** Shared single navbar. `active` highlights current page. */
   let { active = 'home' }: { active?: PageId } = $props();
@@ -13,6 +15,22 @@
   let isMobile = $state(false);
   let menuEl: HTMLElement | null = $state(null);
   let toggleEl: HTMLButtonElement | null = $state(null);
+  let headerEl: HTMLElement | null = $state(null);
+  let accountOpen = $state(false);
+  let accountEl: HTMLElement | null = $state(null);
+  let accountButtonEl: HTMLButtonElement | null = $state(null);
+
+  // Prerendered site: auth resolves client-side, so before `ready` we render
+  // the logged-out variant (never a flash of the account controls) and let the
+  // $derived flip reactively once the session probe settles.
+  const loggedIn = $derived(authStore.ready && authStore.isAuthenticated);
+
+  $effect(() => {
+    if (loggedIn) void ensureViewerProfile();
+  });
+
+  const viewerLabel = $derived(authStore.viewerName || authStore.user?.email || '');
+  const viewerInitial = $derived(viewerLabel.trim().charAt(0).toUpperCase() || '?');
 
   const warmHero = () => prefetchVideo('/videos/hero.mp4');
 
@@ -32,13 +50,44 @@
     }
   }
 
-  function onKeydown(e: KeyboardEvent) {
-    if (!menuOpen) return;
-    if (e.key === 'Escape') {
-      e.preventDefault();
-      closeMenu(true);
-      return;
+  function closeAccount(returnFocus = false) {
+    accountOpen = false;
+    if (returnFocus) {
+      tick().then(() => accountButtonEl?.focus());
     }
+  }
+
+  function toggleAccount() {
+    accountOpen = !accountOpen;
+    if (accountOpen) {
+      tick().then(() => {
+        accountEl?.querySelector<HTMLElement>('.targo-account-menu a, .targo-account-menu button')
+          ?.focus();
+      });
+    }
+  }
+
+  async function onSignOut() {
+    closeMenu();
+    closeAccount();
+    await signOut();
+    goto('/');
+  }
+
+  function onKeydown(e: KeyboardEvent) {
+    if (e.key === 'Escape') {
+      if (accountOpen) {
+        e.preventDefault();
+        closeAccount(true);
+        return;
+      }
+      if (menuOpen) {
+        e.preventDefault();
+        closeMenu(true);
+        return;
+      }
+    }
+    if (!menuOpen) return;
     if (e.key === 'Tab' && menuEl) {
       const focusables = menuEl.querySelectorAll<HTMLElement>(
         'a[href], button:not([disabled])'
@@ -57,8 +106,11 @@
   }
 
   function onDocumentClick(e: MouseEvent) {
-    if (!menuOpen || !menuEl) return;
     const target = e.target as Node;
+    if (accountOpen && accountEl && !accountEl.contains(target)) {
+      closeAccount();
+    }
+    if (!menuOpen || !menuEl) return;
     if (!menuEl.contains(target) && !(toggleEl && toggleEl.contains(target))) {
       closeMenu();
     }
@@ -69,23 +121,49 @@
     const sync = () => {
       isMobile = mq.matches;
       if (!mq.matches && menuOpen) closeMenu();
+      if (mq.matches) closeAccount();
     };
     sync();
     mq.addEventListener('change', sync);
     document.addEventListener('keydown', onKeydown);
     document.addEventListener('click', onDocumentClick);
+
+    // Measured nav height -> --targo-nav-h. Consumers (the home hero's
+    // full-bleed offset) use var(--targo-nav-h, 96px) as a pre-hydration
+    // fallback, so this only ever runs client-side: no top-level DOM access,
+    // SSR/prerender safe. Kept in sync because the header reflows on resize,
+    // font load and burger/menu open.
+    const header: HTMLElement | null =
+      headerEl ?? document.querySelector<HTMLElement>('header.targo-nav');
+    let unobserveNavHeight: (() => void) | undefined;
+    if (header) {
+      const el: HTMLElement = header;
+      const syncNavHeight = () => {
+        document.documentElement.style.setProperty('--targo-nav-h', `${el.offsetHeight}px`);
+      };
+      syncNavHeight();
+      const navHeightObserver = new ResizeObserver(syncNavHeight);
+      navHeightObserver.observe(el);
+      unobserveNavHeight = () => navHeightObserver.disconnect();
+    }
+
+    // Start the shared auth probe (idempotent: first caller wins). Kept inside
+    // this existing mount so no browser/Supabase API runs at module scope.
+    initAuth();
+
     return () => {
       mq.removeEventListener('change', sync);
       document.removeEventListener('keydown', onKeydown);
       document.removeEventListener('click', onDocumentClick);
       document.body.style.overflow = '';
+      unobserveNavHeight?.();
     };
   });
 </script>
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="targo-nav">
+<header class="targo-nav" bind:this={headerEl}>
   <a
     href="/"
     class="targo-logo"
@@ -93,8 +171,7 @@
     onpointerenter={warmHero}
     onfocus={warmHero}
   >
-    <span class="targo-mark" aria-hidden="true"><span class="targo-ellipse"></span></span>
-    <span class="targo-word">a2h</span>
+    <img class="targo-logo-img" src="/images/logo.png" alt="Tech Pixel A2H logo" width="1056" height="470" />
   </a>
 
   <nav class="targo-links" aria-label="Primary">
@@ -107,10 +184,51 @@
         onfocus={warmHero}>{item.label}</a
       >
     {/each}
+    {#if loggedIn}
+      <div class="targo-account" bind:this={accountEl}>
+        <button
+          type="button"
+          class="targo-user"
+          bind:this={accountButtonEl}
+          data-testid="nav-account"
+          aria-expanded={accountOpen}
+          aria-label={viewerLabel ? `Signed in as ${viewerLabel}` : 'Account menu'}
+          onpointerenter={warmHero}
+          onfocus={warmHero}
+          onclick={toggleAccount}
+        >
+          <span class="targo-user-avatar" aria-hidden="true">{viewerInitial}</span>
+          <span class="targo-user-meta">
+            <span class="targo-user-name">{viewerLabel}</span>
+            <span class="targo-user-role">{authStore.isAdmin ? 'Admin' : 'Signed in'}</span>
+          </span>
+        </button>
+        {#if accountOpen}
+          <div class="targo-account-menu">
+            {#if authStore.isAdmin}
+              <a
+                href="/admin"
+                data-testid="nav-menu-admin"
+                onpointerenter={warmHero}
+                onfocus={warmHero}
+                onclick={() => {
+                  closeAccount();
+                  closeMenu();
+                }}>Admin</a
+              >
+            {/if}
+            <button type="button" data-testid="nav-signout" onclick={() => void onSignOut()}>
+              Sign out
+            </button>
+          </div>
+        {/if}
+      </div>
+    {/if}
   </nav>
   <a
     class="targo-contact-btn targo-contact-desktop"
     href={CONTACT_HREF}
+    data-testid="nav-start-project"
     onpointerenter={warmHero}
     onfocus={warmHero}
   >
@@ -118,7 +236,7 @@
       <rect x="1" y="1" width="15" height="11" rx="1.5" stroke="#111" stroke-width="1.4" />
       <path d="M1.5 2.5 L8.5 8 L15.5 2.5" stroke="#111" stroke-width="1.4" fill="none" />
     </svg>
-    Contact us
+    Start a Project
   </a>
   <button
     bind:this={toggleEl}
@@ -148,11 +266,31 @@
         onfocus={warmHero}>{item.label}</a
       >
     {/each}
+    {#if loggedIn}
+      {#if authStore.isAdmin}
+        <a
+          href="/admin"
+          data-testid="nav-menu-admin-mobile"
+          onclick={() => closeMenu()}
+          onpointerenter={warmHero}
+          onfocus={warmHero}>Admin</a
+        >
+      {/if}
+      <button
+        type="button"
+        class="targo-mobile-signout"
+        data-testid="nav-signout-mobile"
+        onclick={() => void onSignOut()}
+      >
+        Sign out{viewerLabel ? ` (${viewerLabel})` : ''}
+      </button>
+    {/if}
     <a
       href={CONTACT_HREF}
+      data-testid="nav-start-project-mobile"
       onclick={() => closeMenu()}
       onpointerenter={warmHero}
-      onfocus={warmHero}>Contact us</a
+      onfocus={warmHero}>Start a Project</a
     >
   </nav>
 {/if}
@@ -194,11 +332,19 @@
     margin: clamp(12px, 2vw, 24px) clamp(20px, 4vw, 48px) 0;
     padding: 14px clamp(18px, 2.5vw, 28px);
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.55);
-    -webkit-backdrop-filter: blur(18px) saturate(1.5);
-    backdrop-filter: blur(18px) saturate(1.5);
-    border: 1px solid rgba(255, 255, 255, 0.65);
-    box-shadow: 0 8px 32px rgba(18, 33, 46, 0.1);
+    /* frosted-glass bar: semi-transparent gradient + strong backdrop blur so
+       the page/hero behind it shows through instead of reading as a white pill */
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.42));
+    -webkit-backdrop-filter: blur(22px) saturate(1.8);
+    backdrop-filter: blur(22px) saturate(1.8);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow:
+      0 10px 40px rgba(18, 33, 46, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    /* faint dark hairline just inside the border: keeps the panel edge readable
+       over very light backgrounds as well as over the hero */
+    outline: 1px solid rgba(18, 33, 46, 0.1);
+    outline-offset: -1px;
     font-family: 'Quantico', 'Arial Narrow', sans-serif;
   }
   .targo-logo {
@@ -207,30 +353,11 @@
     gap: 10px;
     text-decoration: none;
   }
-  .targo-mark {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: #111;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .targo-ellipse {
-    width: 20px;
-    height: 8px;
-    background: #fff;
-    border-radius: 50%;
-    transform: rotate(-25deg);
+  .targo-logo-img {
+    height: 40px;
+    width: auto;
     display: block;
-  }
-  .targo-word {
-    font-size: clamp(22px, 5vw, 30px);
-    font-weight: 400;
-    color: #111;
-    letter-spacing: -0.5px;
-    text-transform: lowercase;
+    flex-shrink: 0;
   }
   .targo-links {
     display: flex;
@@ -251,6 +378,105 @@
   }
   .targo-links a:hover,
   .targo-links a.active {
+    color: #0a6f8c;
+  }
+  .targo-links button.targo-user {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    text-transform: none;
+    letter-spacing: normal;
+    text-decoration: none;
+    color: #111;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .targo-user-avatar {
+    display: inline-grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: #12212e;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1;
+  }
+  .targo-user-meta {
+    display: grid;
+    gap: 1px;
+    min-width: 0;
+    text-align: left;
+  }
+  .targo-user-name {
+    font-size: clamp(12px, 2.4vw, 14px);
+    line-height: 1.15;
+    max-width: 16ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .targo-user-role {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #0a6f8c;
+  }
+  .targo-account {
+    position: relative;
+    display: inline-flex;
+  }
+  .targo-account-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    z-index: 60;
+    min-width: 172px;
+    display: grid;
+    gap: 4px;
+    padding: 10px;
+    border-radius: 14px;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.8));
+    -webkit-backdrop-filter: blur(22px) saturate(1.8);
+    backdrop-filter: blur(22px) saturate(1.8);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow:
+      0 10px 40px rgba(18, 33, 46, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    outline: 1px solid rgba(18, 33, 46, 0.1);
+    outline-offset: -1px;
+    font-family: 'Quantico', 'Arial Narrow', sans-serif;
+  }
+  .targo-account-menu a,
+  .targo-account-menu button {
+    display: block;
+    width: 100%;
+    padding: 9px 12px;
+    border: 0;
+    border-radius: 9px;
+    background: none;
+    color: #1a1c1e;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .targo-account-menu a:hover,
+  .targo-account-menu a:focus-visible,
+  .targo-account-menu button:hover,
+  .targo-account-menu button:focus-visible {
+    background: rgba(10, 111, 140, 0.12);
     color: #0a6f8c;
   }
   .targo-contact-btn {
@@ -308,20 +534,34 @@
     margin: 10px clamp(20px, 4vw, 48px) 0;
     padding: 18px clamp(20px, 4vw, 28px);
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.6);
-    -webkit-backdrop-filter: blur(18px) saturate(1.5);
-    backdrop-filter: blur(18px) saturate(1.5);
-    border: 1px solid rgba(255, 255, 255, 0.65);
-    box-shadow: 0 8px 32px rgba(18, 33, 46, 0.1);
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.42));
+    -webkit-backdrop-filter: blur(22px) saturate(1.8);
+    backdrop-filter: blur(22px) saturate(1.8);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow:
+      0 10px 40px rgba(18, 33, 46, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    outline: 1px solid rgba(18, 33, 46, 0.1);
+    outline-offset: -1px;
     font-family: 'Quantico', 'Arial Narrow', sans-serif;
   }
-  .targo-mobile-menu a {
+  .targo-mobile-menu a,
+  .targo-mobile-menu button.targo-mobile-signout {
     color: #1a1c1e;
+    font-family: inherit;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     text-decoration: none;
     font-size: 15px;
+  }
+  .targo-mobile-menu button.targo-mobile-signout {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
   }
   @media (max-width: 700px) {
     .targo-links,

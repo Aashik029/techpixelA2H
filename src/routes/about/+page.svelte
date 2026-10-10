@@ -32,22 +32,22 @@
 <svelte:head>
   <title>About Us — Tech Pixel A2H</title>
   <meta name="description" content="Meet Tech Pixel A2H — a focused team building websites, AI automation, design and marketing for growing businesses. Led by founder & CEO Ajay A." />
-  <link rel="canonical" href="https://techpixela2h.com/about" />
+  <link rel="canonical" href="https://tech-pixel-a2h.vercel.app/about" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#12212e" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tech Pixel A2H" />
   <meta property="og:title" content="About Us — Tech Pixel A2H" />
   <meta property="og:description" content="Meet Tech Pixel A2H — a focused team building websites, AI automation, design and marketing for growing businesses. Led by founder & CEO Ajay A." />
-  <meta property="og:url" content="https://techpixela2h.com/about" />
-  <meta property="og:image" content="https://techpixela2h.com/og/about.png" />
+  <meta property="og:url" content="https://tech-pixel-a2h.vercel.app/about" />
+  <meta property="og:image" content="https://tech-pixel-a2h.vercel.app/og/about.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="About Tech Pixel A2H — the team behind the work" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About Us — Tech Pixel A2H" />
   <meta name="twitter:description" content="Meet Tech Pixel A2H — a focused team building websites, AI automation, design and marketing for growing businesses. Led by founder & CEO Ajay A." />
-  <meta name="twitter:image" content="https://techpixela2h.com/og/about.png" />
+  <meta name="twitter:image" content="https://tech-pixel-a2h.vercel.app/og/about.png" />
 </svelte:head>
 
 <JsonLd
@@ -89,10 +89,10 @@
     <div class="about-inner">
       <p class="targo-eyebrow">Leadership</p>
       <h2 class="targo-title about-h2">Led by people<br />who <span class="t-accent">build.</span></h2>
-      <div class="about-leaders about-leaders-single">
+      <div class="about-leaders">
         <article class="targo-card leader-card">
-          <div class="leader-photo">
-            <img src="/images/ajay-ceo.jpg" alt="Ajay A — Founder and CEO of Tech Pixel A2H" loading="lazy" />
+          <div class="leader-photo leader-photo-empty" aria-hidden="true">
+            <span>A</span>
           </div>
           <p class="targo-num leader-role">Founder &amp; CEO</p>
           <h3 class="leader-name">Ajay A</h3>
@@ -100,6 +100,17 @@
             Ajay founded Tech Pixel A2H to give small businesses enterprise-grade digital
             work without the agency overhead. He leads strategy and client relationships —
             every project ships only when it solves the client’s real problem.
+          </p>
+        </article>
+        <article class="targo-card leader-card">
+          <div class="leader-photo leader-photo-empty" aria-hidden="true">
+            <span>H</span>
+          </div>
+          <p class="targo-num leader-role">CTO</p>
+          <h3 class="leader-name">Hanush S</h3>
+          <p class="leader-bio">
+            Hanush leads technology at Tech Pixel A2H — architecture, engineering quality
+            and delivery. He turns client goals into fast, reliable systems that scale.
           </p>
         </article>
       </div>

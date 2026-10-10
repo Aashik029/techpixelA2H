@@ -27,7 +27,10 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  /* clip (not hidden) so <body> is NOT a scroll container — otherwise the
+     sticky TargoNav would stick to body (which never scrolls) and vanish on
+     scroll. clip still suppresses horizontal overflow. */
+  overflow-x: clip;
   background: #ffffff;
   color: #12212e;
 }

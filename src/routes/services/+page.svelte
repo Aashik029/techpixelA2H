@@ -11,7 +11,7 @@
     name="description"
     content="Five core services, one team: web development, AI automation, poster design, content creation and digital marketing."
   />
-  <link rel="canonical" href="https://techpixela2h.com/services" />
+  <link rel="canonical" href="https://tech-pixel-a2h.vercel.app/services" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#12212e" />
   <meta property="og:type" content="website" />
@@ -21,8 +21,8 @@
     property="og:description"
     content="Five core services, one team: web development, AI automation, poster design, content creation and digital marketing."
   />
-  <meta property="og:url" content="https://techpixela2h.com/services" />
-  <meta property="og:image" content="https://techpixela2h.com/og/services.png" />
+  <meta property="og:url" content="https://tech-pixel-a2h.vercel.app/services" />
+  <meta property="og:image" content="https://tech-pixel-a2h.vercel.app/og/services.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Services — Tech Pixel A2H" />
@@ -32,7 +32,7 @@
     name="twitter:description"
     content="Five core services, one team: web development, AI automation, poster design, content creation and digital marketing."
   />
-  <meta name="twitter:image" content="https://techpixela2h.com/og/services.png" />
+  <meta name="twitter:image" content="https://tech-pixel-a2h.vercel.app/og/services.png" />
 </svelte:head>
 
 <JsonLd

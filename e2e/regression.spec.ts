@@ -39,6 +39,10 @@ test.describe('contact wizard', () => {
 		});
 		await page.goto('/#contact', { waitUntil: 'networkidle' });
 		await expect(page.locator('#contact').getByText('Step 1 of 4')).toBeVisible();
+		// The cookie dialog is a fixed overlay that covers bottom-of-viewport
+		// controls on short viewports; decline it as a user would before driving
+		// the wizard (also keeps Plausible out of the console-error collector).
+		await page.getByTestId('tc-consent-decline').click();
 		// stash collector for the test to assert at the end
 		(page as unknown as { __errors: string[] }).__errors = errors;
 	});

@@ -76,9 +76,10 @@
 
     <div class="targo-quant mt-12 flex flex-col items-center justify-between gap-4 border-t border-[rgba(18,33,46,0.1)] pt-7 text-[13px] font-bold text-[#3d4653] sm:flex-row">
       <p>© 2026 Tech Pixel A2H. All rights reserved.</p>
-      <p class="flex gap-6">
+      <p class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 sm:justify-end">
         <a href="/privacy" class="transition-colors hover:text-[#15bcdf]">Privacy Policy</a>
         <a href="/terms" class="transition-colors hover:text-[#15bcdf]">Terms of Service</a>
+        <a href="/admin" rel="nofollow" class="text-[11px] font-normal tracking-wide text-[#9aa3af] transition-colors hover:text-[#3d4653]">Admin</a>
       </p>
     </div>
   </div>

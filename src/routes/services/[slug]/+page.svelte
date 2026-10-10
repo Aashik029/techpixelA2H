@@ -8,22 +8,22 @@
 <svelte:head>
   <title>{data.entry.title} — Services — Tech Pixel A2H</title>
   <meta name="description" content={data.entry.description} />
-  <link rel="canonical" href="https://techpixela2h.com/services/{data.entry.slug}" />
+  <link rel="canonical" href="https://tech-pixel-a2h.vercel.app/services/{data.entry.slug}" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#12212e" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tech Pixel A2H" />
   <meta property="og:title" content="{data.entry.title} — Services — Tech Pixel A2H" />
   <meta property="og:description" content={data.entry.description} />
-  <meta property="og:url" content="https://techpixela2h.com/services/{data.entry.slug}" />
-  <meta property="og:image" content="https://techpixela2h.com/og/services-{data.entry.slug}.png" />
+  <meta property="og:url" content="https://tech-pixel-a2h.vercel.app/services/{data.entry.slug}" />
+  <meta property="og:image" content="https://tech-pixel-a2h.vercel.app/og/services-{data.entry.slug}.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="{data.entry.title} — Tech Pixel A2H" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{data.entry.title} — Services — Tech Pixel A2H" />
   <meta name="twitter:description" content={data.entry.description} />
-  <meta name="twitter:image" content="https://techpixela2h.com/og/services-{data.entry.slug}.png" />
+  <meta name="twitter:image" content="https://tech-pixel-a2h.vercel.app/og/services-{data.entry.slug}.png" />
 </svelte:head>
 
 <JsonLd
@@ -40,7 +40,7 @@
     <p class="targo-lead mt-6 max-w-2xl">{data.entry.description}</p>
 
     <div class="targo-card mt-12 p-8 md:p-12">
-      <p class="targo-eyebrow">What's included</p>
+      <h2 class="targo-eyebrow">What's included</h2>
       <ul class="targo-lead mt-4 text-[15px]">
         {#each data.entry.deliverables as d (d)}
           <li>{d}</li>

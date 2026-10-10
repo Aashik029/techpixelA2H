@@ -9,7 +9,7 @@
     name="description"
     content="How Tech Pixel A2H collects, uses and protects your personal data under India's Digital Personal Data Protection Act, 2023."
   />
-  <link rel="canonical" href="https://techpixela2h.com/privacy" />
+  <link rel="canonical" href="https://tech-pixel-a2h.vercel.app/privacy" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#12212e" />
   <meta property="og:type" content="website" />
@@ -19,8 +19,8 @@
     property="og:description"
     content="How Tech Pixel A2H collects, uses and protects your personal data under India's Digital Personal Data Protection Act, 2023."
   />
-  <meta property="og:url" content="https://techpixela2h.com/privacy" />
-  <meta property="og:image" content="https://techpixela2h.com/og/privacy.png" />
+  <meta property="og:url" content="https://tech-pixel-a2h.vercel.app/privacy" />
+  <meta property="og:image" content="https://tech-pixel-a2h.vercel.app/og/privacy.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Privacy Policy — Tech Pixel A2H" />
@@ -30,7 +30,7 @@
     name="twitter:description"
     content="How Tech Pixel A2H collects, uses and protects your personal data under India's Digital Personal Data Protection Act, 2023."
   />
-  <meta name="twitter:image" content="https://techpixela2h.com/og/privacy.png" />
+  <meta name="twitter:image" content="https://tech-pixel-a2h.vercel.app/og/privacy.png" />
 </svelte:head>
 
 <JsonLd
@@ -91,7 +91,7 @@
           <h2>4. Sharing</h2>
           <p>
             We share data only with processors needed to operate this site and our
-            services: our form-handling provider (Basin), our analytics provider
+            services: our form-handling provider (Supabase), our analytics provider
             (Plausible, after your consent), and our hosting provider. No other
             third-party sharing takes place without your consent, except where
             required by Indian law.

@@ -2,6 +2,7 @@ import { getSupabase } from './supabase';
 
 export type EnquiryPayload = {
 	name: string;
+	email?: string | null;
 	phone: string;
 	service: string;
 	answers: Record<string, unknown>;
@@ -9,6 +10,10 @@ export type EnquiryPayload = {
 	timeline: string;
 	subject: string;
 	message: string;
+	// Set only for authenticated customers so the row is owned by their account
+	// (enforced by the customer_insert RLS policy). Omitted for the public
+	// anonymous form; undefined is dropped by JSON serialization.
+	user_id?: string | null;
 };
 
 // Returns true only when the row lands. supabase-js resolves `{error}`

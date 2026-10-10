@@ -9,7 +9,7 @@
     name="description"
     content="The terms governing Tech Pixel A2H's web development, automation, design, content and marketing services."
   />
-  <link rel="canonical" href="https://techpixela2h.com/terms" />
+  <link rel="canonical" href="https://tech-pixel-a2h.vercel.app/terms" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#12212e" />
   <meta property="og:type" content="website" />
@@ -19,8 +19,8 @@
     property="og:description"
     content="The terms governing Tech Pixel A2H's web development, automation, design, content and marketing services."
   />
-  <meta property="og:url" content="https://techpixela2h.com/terms" />
-  <meta property="og:image" content="https://techpixela2h.com/og/terms.png" />
+  <meta property="og:url" content="https://tech-pixel-a2h.vercel.app/terms" />
+  <meta property="og:image" content="https://tech-pixel-a2h.vercel.app/og/terms.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Terms of Service — Tech Pixel A2H" />
@@ -30,7 +30,7 @@
     name="twitter:description"
     content="The terms governing Tech Pixel A2H's web development, automation, design, content and marketing services."
   />
-  <meta name="twitter:image" content="https://techpixela2h.com/og/terms.png" />
+  <meta name="twitter:image" content="https://tech-pixel-a2h.vercel.app/og/terms.png" />
 </svelte:head>
 
 <JsonLd

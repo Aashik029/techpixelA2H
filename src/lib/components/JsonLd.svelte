@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Graph } from 'schema-dts';
   import { EMAIL, PHONE_DISPLAY, SITE_URL } from '$lib/content/site';
+  import { SERVICES } from '$lib/content/services';
 
   interface Crumb {
     name: string;
@@ -30,19 +31,35 @@
         '@id': orgId,
         name: 'Tech Pixel A2H',
         url: SITE_URL,
-        logo: `${SITE_URL}/favicon.svg`,
+        logo: `${SITE_URL}/images/logo.png`,
         email: EMAIL,
         telephone: PHONE_DISPLAY,
         address: { '@type': 'PostalAddress', addressCountry: 'IN' }
       },
       {
         '@type': 'ProfessionalService',
+        '@id': `${SITE_URL}#service`,
         name: 'Tech Pixel A2H',
         url: SITE_URL,
         telephone: PHONE_DISPLAY,
         email: EMAIL,
         areaServed: { '@type': 'Country', name: 'India' },
-        address: { '@type': 'PostalAddress', addressCountry: 'IN' }
+        address: { '@type': 'PostalAddress', addressCountry: 'IN' },
+        parentOrganization: { '@id': orgId },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Tech Pixel A2H services',
+          itemListElement: SERVICES.map((s) => ({
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: s.title,
+              description: s.description,
+              url: `${SITE_URL}/services/${s.slug}`,
+              provider: { '@id': orgId }
+            }
+          }))
+        }
       },
       {
         '@type': 'WebSite',

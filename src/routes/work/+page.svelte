@@ -11,7 +11,7 @@
     name="description"
     content="A sample of our design and build capabilities, including concept work."
   />
-  <link rel="canonical" href="https://techpixela2h.com/work" />
+  <link rel="canonical" href="https://tech-pixel-a2h.vercel.app/work" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#12212e" />
   <meta property="og:type" content="website" />
@@ -21,8 +21,8 @@
     property="og:description"
     content="A sample of our design and build capabilities, including concept work."
   />
-  <meta property="og:url" content="https://techpixela2h.com/work" />
-  <meta property="og:image" content="https://techpixela2h.com/og/work.png" />
+  <meta property="og:url" content="https://tech-pixel-a2h.vercel.app/work" />
+  <meta property="og:image" content="https://tech-pixel-a2h.vercel.app/og/work.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Work — Tech Pixel A2H" />
@@ -32,7 +32,7 @@
     name="twitter:description"
     content="A sample of our design and build capabilities, including concept work."
   />
-  <meta name="twitter:image" content="https://techpixela2h.com/og/work.png" />
+  <meta name="twitter:image" content="https://tech-pixel-a2h.vercel.app/og/work.png" />
 </svelte:head>
 
 <JsonLd

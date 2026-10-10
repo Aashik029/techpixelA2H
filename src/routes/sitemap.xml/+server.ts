@@ -9,7 +9,7 @@ export const prerender = true;
 export const GET: RequestHandler = async () => {
   return await response({
     origin: SITE_URL,
-    excludeRoutePatterns: [/^\/404(?:$|\/)/, /^\/admin/],
+    excludeRoutePatterns: [/^\/404(?:$|\/)/, /^\/admin/, /^\/login/],
     paramValues: {
       '/services/[slug]': SERVICES.map((s) => s.slug),
       '/work/[slug]': WORK.map((w) => w.slug)
