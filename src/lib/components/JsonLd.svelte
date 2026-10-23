@@ -53,7 +53,7 @@
   const hasBreadcrumb = $derived(trail.length > 1);
 
   const COMPANY_DESCRIPTION =
-    'Tech Pixel A2H is a team in India that helps small and growing businesses get online, automate routine work, and attract customers through web development, AI automation, poster design, content creation, and digital marketing.';
+    'Tech Pixel A2H is a digital services team based in Trichy, Tamil Nadu, India, helping small and growing businesses get online, automate routine work, and attract customers through web development, AI automation, poster design, content creation, and digital marketing.';
 
   const KNOWS_ABOUT = [
     'Web development',
@@ -238,7 +238,12 @@
         slogan: 'Innovate. Develop. Elevate.',
         email: EMAIL,
         telephone: PHONE_DISPLAY,
-        address: { '@type': 'PostalAddress', addressCountry: 'IN' },
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Trichy',
+          addressRegion: 'Tamil Nadu',
+          addressCountry: 'IN'
+        },
         areaServed: { '@type': 'Country', name: 'India' },
         founder: { '@id': founderId },
         employee: [{ '@id': ctoId }],

@@ -48,7 +48,7 @@
       <p class="targo-eyebrow">Legal</p>
       <h1 class="targo-title mt-4">Privacy<br /><span class="t-accent">Policy</span></h1>
       <p class="targo-lead mt-6 max-w-2xl">
-        Last updated: 29 September 2026. Tech Pixel A2H (“we”, “us”) respects your
+        Last updated: 23 October 2026. Tech Pixel A2H (“we”, “us”) respects your
         privacy and processes personal data in line with India’s Digital Personal
         Data Protection Act, 2023 (DPDP Act).
       </p>
@@ -57,10 +57,9 @@
         <div class="targo-prose max-w-none">
           <h2>1. Who we are</h2>
           <p>
-            Tech Pixel A2H is a digital services team based in India providing web
-            development, AI automation, design, content and marketing services.
-            Registered address: {'{{PLACEHOLDER_REGISTERED_ADDRESS}}'}. Company
-            identifiers (CIN/GSTIN, where applicable): {'{{PLACEHOLDER_CIN_GSTIN}}'}.
+            Tech Pixel A2H is a digital services team based in Trichy, Tamil Nadu,
+            India, providing web development, AI automation, design, content and
+            marketing services to businesses across India.
           </p>
           <h2>2. Data we collect</h2>
           <p>We collect only what we need to respond to you and deliver our services:</p>
@@ -92,7 +91,7 @@
           <p>
             We share data only with processors needed to operate this site and our
             services: our form-handling provider (Supabase), our analytics provider
-            (Plausible, after your consent), and our hosting provider. No other
+            (Plausible, after your consent), and our hosting provider (Vercel). No other
             third-party sharing takes place without your consent, except where
             required by Indian law.
           </p>
@@ -101,15 +100,14 @@
             You may request access to, correction of, or erasure of your personal
             data; withdraw consent at any time (withdrawal does not affect prior
             lawful processing); and seek grievance redressal as described below.
-            To exercise any right, contact us at {'{{PLACEHOLDER_PRIVACY_EMAIL}}'}.
+            To exercise any right, contact us at techpixela2h@gmail.com.
           </p>
           <h2>6. Grievance redressal</h2>
           <p>
-            For data-protection grievances, contact our Grievance Officer at
-            {'{{PLACEHOLDER_GRIEVANCE_NAME}}'}, {'{{PLACEHOLDER_GRIEVANCE_EMAIL}}'},
-            {'{{PLACEHOLDER_GRIEVANCE_PHONE}}'}. We aim to acknowledge grievances
-            within 48 hours and resolve them within 30 days, in line with the
-            DPDP Act timelines.
+            For data-protection grievances, contact our Grievance Officer, Ajay A
+            (Founder &amp; CEO), at techpixela2h@gmail.com or +91 95977 96186. We
+            aim to acknowledge grievances within 48 hours and resolve them within
+            30 days, in line with the DPDP Act timelines.
           </p>
           <h2>7. Retention &amp; security</h2>
           <p>
@@ -133,8 +131,8 @@
           </p>
           <h2>10. Contact</h2>
           <p>
-            Questions about this policy: {'{{PLACEHOLDER_PRIVACY_EMAIL}}'},
-            {'{{PLACEHOLDER_BUSINESS_PHONE}}'}, {'{{PLACEHOLDER_REGISTERED_ADDRESS}}'}.
+            Questions about this policy: techpixela2h@gmail.com, +91 95977 96186,
+            Trichy, Tamil Nadu, India.
           </p>
         </div>
       </div>

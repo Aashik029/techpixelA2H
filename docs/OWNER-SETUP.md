@@ -25,4 +25,4 @@ Complete these in order. Nothing below can be done by the site builder without y
 - CMS edits commit to GitHub. Your host must rebuild on push (or you redeploy manually), otherwise content changes never go live.
 
 ## 6. Launch facts still owed
-Domain decision (register `techpixela2h.com` or name a replacement), analytics (fund Plausible ~$9/mo or delete the banner), and the 12 legal facts for the privacy/terms placeholders.
+Domain decision (register `techpixela2h.com` or name a replacement), analytics (fund Plausible ~$9/mo or delete the banner), and review the completed privacy/terms pages — confirm the 30-day quote validity, 14-day defect/termination windows, and Trichy jurisdiction.

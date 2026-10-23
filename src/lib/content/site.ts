@@ -19,7 +19,7 @@ export const EMAIL_HREF = 'mailto:techpixela2h@gmail.com';
 export const WHATSAPP_NUMBER = '919597796186';
 export const WHATSAPP_HREF =
   'https://wa.me/919597796186?text=Hi%20Tech%20Pixel%20A2H!';
-export const LOCATION = 'India';
+export const LOCATION = 'Trichy, Tamil Nadu, India';
 
 /**
  * Consent-gated analytics (C5). Plausible EU, cookieless. The script loads

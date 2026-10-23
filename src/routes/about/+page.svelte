@@ -31,14 +31,14 @@
 
 <svelte:head>
   <title>About Us — Tech Pixel A2H</title>
-  <meta name="description" content="Meet Tech Pixel A2H — a focused team building websites, AI automation, design and marketing for growing businesses. Led by founder & CEO Ajay A." />
+  <meta name="description" content="Meet Tech Pixel A2H — a web development and AI automation team based in Trichy, Tamil Nadu, building websites, design and marketing for growing businesses. Led by founder & CEO Ajay A." />
   <link rel="canonical" href="https://tech-pixel-a2h.vercel.app/about" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#12212e" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tech Pixel A2H" />
   <meta property="og:title" content="About Us — Tech Pixel A2H" />
-  <meta property="og:description" content="Meet Tech Pixel A2H — a focused team building websites, AI automation, design and marketing for growing businesses. Led by founder & CEO Ajay A." />
+  <meta property="og:description" content="Meet Tech Pixel A2H — a web development and AI automation team based in Trichy, Tamil Nadu, building websites, design and marketing for growing businesses. Led by founder & CEO Ajay A." />
   <meta property="og:url" content="https://tech-pixel-a2h.vercel.app/about" />
   <meta property="og:image" content="https://tech-pixel-a2h.vercel.app/og/about.png" />
   <meta property="og:image:width" content="1200" />
@@ -46,13 +46,13 @@
   <meta property="og:image:alt" content="About Tech Pixel A2H — the team behind the work" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About Us — Tech Pixel A2H" />
-  <meta name="twitter:description" content="Meet Tech Pixel A2H — a focused team building websites, AI automation, design and marketing for growing businesses. Led by founder & CEO Ajay A." />
+  <meta name="twitter:description" content="Meet Tech Pixel A2H — a web development and AI automation team based in Trichy, Tamil Nadu, building websites, design and marketing for growing businesses. Led by founder & CEO Ajay A." />
   <meta name="twitter:image" content="https://tech-pixel-a2h.vercel.app/og/about.png" />
 </svelte:head>
 
 <JsonLd
   name="About Us — Tech Pixel A2H"
-  description="Meet Tech Pixel A2H — a focused team building websites, AI automation, design and marketing for growing businesses. Led by founder & CEO Ajay A."
+  description="Meet Tech Pixel A2H — a web development and AI automation team based in Trichy, Tamil Nadu, building websites, design and marketing for growing businesses. Led by founder & CEO Ajay A."
   path="/about"
   pageType="AboutPage"
   crumbs={[{ name: 'About', path: '/about' }]}
@@ -163,8 +163,8 @@
           <dd>Ajay A, Founder &amp; CEO; Hanush S, CTO.</dd>
         </div>
         <div class="about-fact">
-          <dt>Service area</dt>
-          <dd>India.</dd>
+          <dt>Based in</dt>
+          <dd>Trichy, Tamil Nadu, India.</dd>
         </div>
       </dl>
     </div>

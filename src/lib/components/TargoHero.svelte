@@ -65,7 +65,7 @@
 
   <div class="targo-cta-row">
     <p class="targo-hero-sub">
-      Web development, AI automation, design, content and marketing for growing businesses in India.
+      Web development, AI automation, design, content and marketing for growing businesses — based in Trichy, working across India.
     </p>
     <a class="targo-cta" href="#contact">
       Get started <span class="targo-cta-dash" aria-hidden="true"></span>

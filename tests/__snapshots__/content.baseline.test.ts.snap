@@ -3,7 +3,7 @@
 exports[`content baseline > FAQS matches baseline 1`] = `
 [
   {
-    "answer": "Tech Pixel A2H is a team in India that helps small and growing businesses get online, automate routine work, and attract customers. We build websites, set up AI automation, design posters and content, and run digital marketing campaigns.",
+    "answer": "Tech Pixel A2H is a team based in Trichy, Tamil Nadu, India, helping small and growing businesses get online, automate routine work, and attract customers. We build websites, set up AI automation, design posters and content, and run digital marketing campaigns.",
     "question": "What does Tech Pixel A2H do?",
   },
   {
@@ -47,7 +47,7 @@ exports[`content baseline > FAQS matches baseline 1`] = `
     "question": "Can I start with one service and add more later?",
   },
   {
-    "answer": "Tech Pixel A2H is based in India and works with businesses across the country. We communicate by email, WhatsApp, and calls, so your location is not a barrier.",
+    "answer": "Tech Pixel A2H is based in Trichy, Tamil Nadu, India, and works with businesses across the country. We communicate by email, WhatsApp, and calls, so your location is not a barrier.",
     "question": "Where are you based?",
   },
   {

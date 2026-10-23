@@ -52,8 +52,8 @@
         <dd class="targo-lead mt-2 text-[15px]">Small and growing businesses</dd>
       </div>
       <div>
-        <dt class="targo-eyebrow">Service area</dt>
-        <dd class="targo-lead mt-2 text-[15px]">India</dd>
+        <dt class="targo-eyebrow">Based in</dt>
+        <dd class="targo-lead mt-2 text-[15px]">Trichy, Tamil Nadu, India</dd>
       </div>
       <div>
         <dt class="targo-eyebrow">How it starts</dt>

@@ -24,7 +24,7 @@ function need(value: unknown, file: string, field: string): asserts value {
   }
 }
 
-/** UNCONFIRMED placeholder FAQs — confirm every answer with the owner. */
+/** Confirmed FAQs, grounded in existing site copy. */
 export const FAQS: Faq[] = Object.keys(modules)
   .sort()
   .map((file) => {

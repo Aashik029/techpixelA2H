@@ -60,11 +60,12 @@ yet. Add them only when real profiles exist.
   internal links.
 - Home-page "Straight answers" block (`TargoAnswers.svelte`) showing the four
   highest-value questions and linking to the full FAQ.
-- Home hero subtitle naming the five services and the India service area.
+- Home hero subtitle naming the five services and the Trichy base, while
+  serving clients across India.
 - About page "Company at a glance" definition list: services, audience, track
-  record, timeline, reply time, project start, leadership and service area.
-- Service detail pages now include an "at a glance" block: best for, service
-  area, how it starts and next step.
+  record, timeline, reply time, project start, leadership and base location.
+- Service detail pages now include an "at a glance" block: best for, base
+  location, how it starts and next step.
 - Services and work index pages explain how engagements start and how sample /
   concept work is labelled.
 - Footer links to FAQ, Resources and `llms.txt`; the contact section links to the

@@ -48,8 +48,8 @@
       <p class="targo-eyebrow">Legal</p>
       <h1 class="targo-title mt-4">Terms of<br /><span class="t-accent">Service</span></h1>
       <p class="targo-lead mt-6 max-w-2xl">
-        Last updated: 29 September 2026. These terms govern quotations, delivery
-        and use of services provided by Tech Pixel A2H, India.
+        Last updated: 23 October 2026. These terms govern quotations, delivery
+        and use of services provided by Tech Pixel A2H, Trichy, Tamil Nadu, India.
       </p>
 
       <div class="targo-card mt-12 p-8 md:p-12">
@@ -64,12 +64,11 @@
           </p>
           <h2>2. Quotations &amp; payments</h2>
           <p>
-            Quotes are valid for {'{{PLACEHOLDER_QUOTE_VALIDITY_DAYS}}'} days unless
-            stated otherwise. Payment schedule, accepted modes (UPI / bank
-            transfer / {'{{PLACEHOLDER_PAYMENT_MODES}}'}) and tax treatment (GST
-            charged at {'{{PLACEHOLDER_GST_TREATMENT}}'}) are specified in each
-            quotation. Late payments may attract interest of
-            {'{{PLACEHOLDER_LATE_FEE_TERMS}}'}. GSTIN: {'{{PLACEHOLDER_GSTIN}}'}.
+            Quotes are valid for 30 days unless stated otherwise. Payment schedule,
+            accepted modes (UPI or bank transfer) and tax treatment (GST will be
+            charged only where applicable and shown in the quotation) are specified
+            in each quotation. Late payments may attract interest at the rate stated
+            in the quotation.
           </p>
           <h2>3. Client responsibilities</h2>
           <p>
@@ -90,9 +89,8 @@
           <h2>5. Warranties &amp; acceptance</h2>
           <p>
             We warrant services will be performed with reasonable professional
-            skill and care. Please report defects within
-            {'{{PLACEHOLDER_DEFECT_REPORT_DAYS}}'} days of delivery and we will
-            remedy covered defects free of charge. Third-party platforms, ad
+            skill and care. Please report defects within 14 days of delivery and
+            we will remedy covered defects free of charge. Third-party platforms, ad
             accounts, app stores and search rankings are outside our control and
             carry no guarantee.
           </p>
@@ -105,24 +103,22 @@
           </p>
           <h2>7. Termination</h2>
           <p>
-            Either party may terminate with {'{{PLACEHOLDER_TERMINATION_NOTICE}}'}
-            written notice. Work completed up to termination, plus committed
-            third-party costs, remains payable. Sections 4, 6 and 8 survive
-            termination.
+            Either party may terminate with 14 days' written notice. Work completed
+            up to termination, plus committed third-party costs, remains payable.
+            Sections 4, 6 and 8 survive termination.
           </p>
           <h2>8. Governing law &amp; jurisdiction</h2>
           <p>
             These terms are governed by the laws of India. Disputes are subject
-            to the exclusive jurisdiction of the courts at
-            {'{{PLACEHOLDER_JURISDICTION_CITY}}'}, India. Nothing here limits your
+            to the exclusive jurisdiction of the courts at Trichy, Tamil Nadu,
+            India. Nothing here limits your
             statutory rights, including under the Digital Personal Data
             Protection Act, 2023 and the Consumer Protection Act, 2019.
           </p>
           <h2>9. Contact</h2>
           <p>
-            Tech Pixel A2H, {'{{PLACEHOLDER_REGISTERED_ADDRESS}}'}.
-            {'{{PLACEHOLDER_BUSINESS_EMAIL}}'}, {'{{PLACEHOLDER_BUSINESS_PHONE}}'}.
-            CIN: {'{{PLACEHOLDER_CIN}}'}.
+            Tech Pixel A2H, Trichy, Tamil Nadu, India.
+            techpixela2h@gmail.com, +91 95977 96186.
           </p>
         </div>
       </div>

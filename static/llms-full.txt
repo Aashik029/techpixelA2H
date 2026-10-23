@@ -1,6 +1,6 @@
 # Tech Pixel A2H - Full Site Text
 
-> Tech Pixel A2H is a team in India that helps small and growing businesses get online, automate routine work, and attract customers. Core services: web development, AI automation, poster design, content creation, and digital marketing.
+> Tech Pixel A2H is a team based in Trichy, Tamil Nadu, India, helping small and growing businesses get online, automate routine work, and attract customers. Core services: web development, AI automation, poster design, content creation, and digital marketing.
 
 This file gives AI assistants and answer engines the full public text of the site in one place. All work entries state whether they are client work, samples, or concepts.
 
@@ -13,7 +13,7 @@ This file gives AI assistants and answer engines the full public text of the sit
 - Reply time: Within 24 hours.
 - How projects start: Free consultation, then a clear plan and a fixed quote.
 - Leadership: Ajay A, Founder & CEO; Hanush S, CTO.
-- Service area: India.
+- Based in: Trichy, Tamil Nadu, India.
 
 ## About Tech Pixel A2H
 
@@ -162,7 +162,7 @@ Detail: This sample maps a full local growth loop for a service business, connec
 
 ### What does Tech Pixel A2H do?
 
-Tech Pixel A2H is a team in India that helps small and growing businesses get online, automate routine work, and attract customers. We build websites, set up AI automation, design posters and content, and run digital marketing campaigns.
+Tech Pixel A2H is a team based in Trichy, Tamil Nadu, India, helping small and growing businesses get online, automate routine work, and attract customers. We build websites, set up AI automation, design posters and content, and run digital marketing campaigns.
 
 ### How much does a project cost?
 
@@ -206,7 +206,7 @@ Yes. Pick what you need now and add more as you grow. The services are designed 
 
 ### Where are you based?
 
-Tech Pixel A2H is based in India and works with businesses across the country. We communicate by email, WhatsApp, and calls, so your location is not a barrier.
+Tech Pixel A2H is based in Trichy, Tamil Nadu, India, and works with businesses across the country. We communicate by email, WhatsApp, and calls, so your location is not a barrier.
 
 ### How fast do you reply?
 
@@ -218,7 +218,7 @@ We aim to reply within 24 hours. You can reach us through the contact form, What
 - Email: techpixela2h@gmail.com
 - WhatsApp: https://wa.me/919597796186
 - Contact form: https://tech-pixel-a2h.vercel.app/#contact
-- Location: India
+- Location: Trichy, Tamil Nadu, India
 
 ## Pages
 
