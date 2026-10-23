@@ -11,3 +11,5 @@ mcp-server.log
 build1.txt
 check*.txt
 .codegraph/
+
+.vercel

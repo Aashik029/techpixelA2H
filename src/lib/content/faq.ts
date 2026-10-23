@@ -1,10 +1,12 @@
 /**
- * FAQ content module (C3). UNCONFIRMED placeholder — answers are generic
- * drafts awaiting owner confirmation. Never present as fact.
+ * FAQ content module (C3). Answers are limited to claims already published
+ * elsewhere on the site (services, process, about and contact copy) — no
+ * pricing figures, client names, metrics or guarantees are invented here.
  *
  * Data lives in `src/lib/content/data/faq/*.json` (one entry per file,
  * editable via Sveltia CMS at `/cms/`). This module aggregates them in
- * filename order — output is identical to the former inline array.
+ * filename order. The first four entries also power the home-page
+ * "Straight answers" block.
  */
 export interface Faq {
   question: string;

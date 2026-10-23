@@ -68,6 +68,12 @@
             <a href="/about" class="targo-quant font-bold text-[#12212e] transition-colors hover:text-[#15bcdf]">About</a>
           </li>
           <li>
+            <a href="/faq" class="targo-quant font-bold text-[#12212e] transition-colors hover:text-[#15bcdf]">FAQ</a>
+          </li>
+          <li>
+            <a href="/download" class="targo-quant font-bold text-[#12212e] transition-colors hover:text-[#15bcdf]">Resources</a>
+          </li>
+          <li>
             <a href="/#contact" class="targo-quant font-bold text-[#12212e] transition-colors hover:text-[#15bcdf]">Contact</a>
           </li>
         </ul>
@@ -79,6 +85,12 @@
       <p class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 sm:justify-end">
         <a href="/privacy" class="transition-colors hover:text-[#15bcdf]">Privacy Policy</a>
         <a href="/terms" class="transition-colors hover:text-[#15bcdf]">Terms of Service</a>
+        <a
+          href="/llms.txt"
+          title="AI-readable site summary"
+          aria-label="AI-readable site summary (llms.txt)"
+          class="transition-colors hover:text-[#15bcdf]">llms.txt</a
+        >
         <a href="/admin" rel="nofollow" class="text-[11px] font-normal tracking-wide text-[#9aa3af] transition-colors hover:text-[#3d4653]">Admin</a>
       </p>
     </div>

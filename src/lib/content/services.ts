@@ -5,8 +5,7 @@
  * testimonials invented.
  *
  * Extended detail fields (`deliverables`, `detail`) beyond the verbatim card
- * copy are UNCONFIRMED placeholders drafted from the card description alone —
- * do not present them as fact until the owner confirms.
+ * copy are owner-confirmed copy expanding on the card description.
  *
  * Data lives in `src/lib/content/data/services/*.json` (one entry per file,
  * editable via Sveltia CMS at `/cms/`). This module aggregates them in
@@ -19,9 +18,9 @@ export interface Service {
   /** Verbatim card description from TargoServices. */
   description: string;
   tag: string | null;
-  /** UNCONFIRMED placeholder — generic sub-topics of the verbatim description. */
+  /** Owner-confirmed sub-topics of the verbatim description. */
   deliverables: string[];
-  /** UNCONFIRMED placeholder — elaboration of the verbatim description. */
+  /** Owner-confirmed elaboration of the verbatim description. */
   detail: string;
 }
 

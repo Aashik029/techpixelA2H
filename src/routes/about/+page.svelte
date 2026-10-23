@@ -54,6 +54,7 @@
   name="About Us — Tech Pixel A2H"
   description="Meet Tech Pixel A2H — a focused team building websites, AI automation, design and marketing for growing businesses. Led by founder & CEO Ajay A."
   path="/about"
+  pageType="AboutPage"
   crumbs={[{ name: 'About', path: '/about' }]}
 />
 
@@ -90,9 +91,16 @@
       <p class="targo-eyebrow">Leadership</p>
       <h2 class="targo-title about-h2">Led by people<br />who <span class="t-accent">build.</span></h2>
       <div class="about-leaders">
-        <article class="targo-card leader-card">
-          <div class="leader-photo leader-photo-empty" aria-hidden="true">
-            <span>A</span>
+        <article class="targo-card leader-card" id="ajay-a">
+          <div class="leader-photo">
+            <img
+              src="/images/ajay-ceo.jpg"
+              alt="Ajay A, Founder and CEO of Tech Pixel A2H"
+              width="148"
+              height="148"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <p class="targo-num leader-role">Founder &amp; CEO</p>
           <h3 class="leader-name">Ajay A</h3>
@@ -102,7 +110,7 @@
             every project ships only when it solves the client’s real problem.
           </p>
         </article>
-        <article class="targo-card leader-card">
+        <article class="targo-card leader-card" id="hanush-s">
           <div class="leader-photo leader-photo-empty" aria-hidden="true">
             <span>H</span>
           </div>
@@ -114,6 +122,51 @@
           </p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- COMPANY FACTS -->
+  <section class="targo-band-white about-section" aria-label="Company at a glance">
+    <div class="about-inner">
+      <p class="targo-eyebrow">Company at a glance</p>
+      <h2 class="targo-title about-h2">The short <span class="t-accent">version.</span></h2>
+      <dl class="about-facts">
+        <div class="about-fact">
+          <dt>What we do</dt>
+          <dd>
+            Web development, AI automation, poster design, content creation and digital marketing —
+            one team for everything your business needs online.
+          </dd>
+        </div>
+        <div class="about-fact">
+          <dt>Who we help</dt>
+          <dd>Small and growing businesses across India.</dd>
+        </div>
+        <div class="about-fact">
+          <dt>Track record</dt>
+          <dd>25+ projects delivered for 15+ clients.</dd>
+        </div>
+        <div class="about-fact">
+          <dt>Typical website timeline</dt>
+          <dd>2–3 weeks.</dd>
+        </div>
+        <div class="about-fact">
+          <dt>Reply time</dt>
+          <dd>Within 24 hours.</dd>
+        </div>
+        <div class="about-fact">
+          <dt>How projects start</dt>
+          <dd>Free consultation, then a clear plan and a fixed quote.</dd>
+        </div>
+        <div class="about-fact">
+          <dt>Leadership</dt>
+          <dd>Ajay A, Founder &amp; CEO; Hanush S, CTO.</dd>
+        </div>
+        <div class="about-fact">
+          <dt>Service area</dt>
+          <dd>India.</dd>
+        </div>
+      </dl>
     </div>
   </section>
 
@@ -226,6 +279,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
     display: block;
   }
   .leader-photo-empty {
@@ -260,6 +314,38 @@
     line-height: 1.75;
     color: #3d4653;
     margin-top: 12px;
+  }
+  .about-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 44px;
+    border-top: 1px solid rgba(18, 33, 46, 0.12);
+  }
+  .about-fact {
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(18, 33, 46, 0.12);
+  }
+  .about-fact:nth-child(odd) {
+    padding-right: 32px;
+  }
+  .about-fact:nth-child(even) {
+    padding-left: 32px;
+    border-left: 1px solid rgba(18, 33, 46, 0.12);
+  }
+  .about-fact dt {
+    font-family: 'Quantico', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #0a6f8c;
+  }
+  .about-fact dd {
+    font-family: 'Quantico', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #3d4653;
+    margin-top: 7px;
   }
   .about-values {
     display: grid;
@@ -313,6 +399,18 @@
     }
     .about-values {
       grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 700px) {
+    .about-facts {
+      grid-template-columns: 1fr;
+    }
+    .about-fact:nth-child(odd) {
+      padding-right: 0;
+    }
+    .about-fact:nth-child(even) {
+      padding-left: 0;
+      border-left: 0;
     }
   }
 </style>

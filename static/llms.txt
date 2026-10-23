@@ -1,0 +1,112 @@
+# Tech Pixel A2H
+
+> Tech Pixel A2H is a team in India that helps small and growing businesses get online, automate routine work, and attract customers. Core services: web development, AI automation, poster design, content creation, and digital marketing.
+
+## Key facts
+
+- Based in India; works with businesses across the country.
+- 25+ projects delivered for 15+ clients.
+- Five core services delivered by one team.
+- Websites typically take 2-3 weeks.
+- Replies within 24 hours.
+- Free consultation before a project starts.
+- Clear scope and a fixed quote are agreed before work begins.
+- Training, documentation, and ongoing support are included after launch.
+- Contact: +91 95977 96186 or techpixela2h@gmail.com.
+
+## Services
+
+- [Web Development](https://tech-pixel-a2h.vercel.app/services/web-development): Business websites, portfolios, landing pages, and e-commerce stores. Fast, mobile-first, and built to convert visitors into customers.
+- [AI Automation](https://tech-pixel-a2h.vercel.app/services/ai-automation): WhatsApp bots, lead qualification, follow-up sequences, and business reports that handle routine work in the background.
+- [Poster Design](https://tech-pixel-a2h.vercel.app/services/poster-design): Festival creatives, offer posters, event flyers, and brand kits that are readable and consistent.
+- [Content Creation](https://tech-pixel-a2h.vercel.app/services/content-creation): Product videos, reels, business profiles, and presentation decks that explain what you offer.
+- [Digital Marketing](https://tech-pixel-a2h.vercel.app/services/digital-marketing): SEO, social media, and WhatsApp campaigns focused on a steady flow of enquiries.
+
+## Work
+
+All work entries state their status clearly. Some are samples or concepts, not client engagements.
+
+- [Local Store, Online Overnight](https://tech-pixel-a2h.vercel.app/work/local-store-online): E-commerce website sample with product catalog, WhatsApp ordering, and festival banners. Status: selected sample, not a client engagement.
+- [One Workspace for the Whole Team](https://tech-pixel-a2h.vercel.app/work/team-workspace): B2B web application sample with projects, clients, and daily tasks in one dashboard. Status: selected sample, not a client engagement.
+- [HR Without the Spreadsheets](https://tech-pixel-a2h.vercel.app/work/hrms-concept): HRMS interface concept for attendance, leave requests, and employee records. Status: concept exploration, not shipped for a client.
+- [Festival Season, Fully Designed](https://tech-pixel-a2h.vercel.app/work/festival-posters): Poster pack sample with offer posters, social creatives, and banners. Status: selected sample, not a client engagement.
+- [Content That Brings Customers](https://tech-pixel-a2h.vercel.app/work/seo-blog-system): SEO blog and content system sample. Status: selected sample, not a client engagement.
+- [From Invisible to Booked Out](https://tech-pixel-a2h.vercel.app/work/growth-campaign): Local growth campaign sample with social creatives, WhatsApp follow-ups, and a review engine. Status: selected sample, not a client engagement.
+
+## Common questions
+
+### What does Tech Pixel A2H do?
+
+Tech Pixel A2H is a team in India that helps small and growing businesses get online, automate routine work, and attract customers. We build websites, set up AI automation, design posters and content, and run digital marketing campaigns.
+
+### How much does a project cost?
+
+Every project is quoted individually based on scope. After a free consultation, we share a clear plan and a fixed quote before work begins, so you know the cost upfront.
+
+### How long does a website take?
+
+Most websites take 2-3 weeks. The exact timeline depends on the number of pages, content readiness, and the features you need. We confirm the timeline before work begins.
+
+### How do we get started?
+
+Tell us about your business and what you need through the contact form, WhatsApp, or email. We aim to reply within 24 hours with next steps, starting with a free consultation call.
+
+### What services do you offer?
+
+We offer five core services: web development, AI automation, poster design, content creation, and digital marketing. You can start with one service and add more as your business grows.
+
+### Who do you work with?
+
+We work with small and growing businesses across India. Our services are scoped for teams that need a professional website, automation, or ongoing design and marketing support without a large agency overhead.
+
+### Do you offer a free consultation?
+
+Yes. We start with a free consultation call to understand your business, your customers, and what success looks like. From there we map the requirements and share an honest timeline and quote.
+
+### Do you build e-commerce stores?
+
+Yes. E-commerce stores are one of the website types we build, alongside business websites, portfolios, and landing pages. Every store is designed to be fast, mobile-first, and easy for customers to use.
+
+### Can you automate WhatsApp?
+
+Yes. WhatsApp bots are part of our AI automation service, along with lead qualification, follow-up sequences, and business reports. The goal is to handle routine enquiries and updates even when you are away from your phone.
+
+### Do you provide support after launch?
+
+Yes. Training, documentation, and ongoing support are included with every project. We also offer growth guidance after launch so you are not left figuring out the next step alone.
+
+### Can I start with one service and add more later?
+
+Yes. Pick what you need now and add more as you grow. The services are designed to work together, so your website, automation, design, content, and marketing can stay consistent as you expand.
+
+### Where are you based?
+
+Tech Pixel A2H is based in India and works with businesses across the country. We communicate by email, WhatsApp, and calls, so your location is not a barrier.
+
+### How fast do you reply?
+
+We aim to reply within 24 hours. You can reach us through the contact form, WhatsApp, email, or phone.
+
+## Contact
+
+- Phone: +91 95977 96186
+- Email: techpixela2h@gmail.com
+- WhatsApp: https://wa.me/919597796186
+- Contact form: https://tech-pixel-a2h.vercel.app/#contact
+- Location: India
+
+## Pages
+
+- [Home](https://tech-pixel-a2h.vercel.app/)
+- [About](https://tech-pixel-a2h.vercel.app/about)
+- [Services](https://tech-pixel-a2h.vercel.app/services)
+- [Work](https://tech-pixel-a2h.vercel.app/work)
+- [FAQ](https://tech-pixel-a2h.vercel.app/faq)
+- [Resources](https://tech-pixel-a2h.vercel.app/download)
+- [Privacy Policy](https://tech-pixel-a2h.vercel.app/privacy)
+- [Terms of Service](https://tech-pixel-a2h.vercel.app/terms)
+
+## Optional
+
+- [Full site text](https://tech-pixel-a2h.vercel.app/llms-full.txt)
+- [Sitemap](https://tech-pixel-a2h.vercel.app/sitemap.xml)

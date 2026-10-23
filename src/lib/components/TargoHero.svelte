@@ -64,6 +64,9 @@
   </h1>
 
   <div class="targo-cta-row">
+    <p class="targo-hero-sub">
+      Web development, AI automation, design, content and marketing for growing businesses in India.
+    </p>
     <a class="targo-cta" href="#contact">
       Get started <span class="targo-cta-dash" aria-hidden="true"></span>
     </a>
@@ -166,6 +169,13 @@
     padding-left: calc(clamp(20px, 9vw, 118px) + min(238px, 28vw));
     padding-bottom: min(clamp(36px, 6vw, 80px), 7vh);
   }
+  .targo-hero-sub {
+    max-width: 520px;
+    margin: 0 0 20px;
+    font-size: clamp(14px, 1.5vw, 17px);
+    line-height: 1.6;
+    color: #3d4653;
+  }
   .targo-cta {
     display: inline-flex;
     align-items: center;
@@ -219,6 +229,9 @@
     .targo-cta-row {
       padding-left: 20px;
       padding-bottom: 48px;
+    }
+    .targo-hero-sub {
+      padding-right: 20px;
     }
     .targo-cta-row .targo-cta {
       margin-left: min(238px, 28vw);

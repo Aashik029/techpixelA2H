@@ -6,6 +6,7 @@
   import TargoServices from '$lib/components/TargoServices.svelte';
   import TargoWork from '$lib/components/TargoWork.svelte';
   import TargoProcess from '$lib/components/TargoProcess.svelte';
+  import TargoAnswers from '$lib/components/TargoAnswers.svelte';
   import TargoContact from '$lib/components/TargoContact.svelte';
   import JsonLd from '$lib/components/JsonLd.svelte';
 </script>
@@ -55,5 +56,6 @@
   <TargoServices />
   <TargoWork />
   <TargoProcess />
+  <TargoAnswers />
   <TargoContact />
 </main>

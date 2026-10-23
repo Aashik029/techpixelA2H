@@ -40,6 +40,8 @@
   name="Services — Tech Pixel A2H"
   description="Five core services, one team: web development, AI automation, poster design, content creation and digital marketing."
   path="/services"
+  pageType="CollectionPage"
+  services={data.services}
   crumbs={[{ name: 'Services', path: '/services' }]}
 />
 
@@ -52,6 +54,10 @@
     <h1 class="targo-title mt-4">Our<br /><span class="t-accent">Services</span></h1>
     <p class="targo-lead mt-6 max-w-2xl">
       Five core services, one team. Pick what you need now — add more as you grow.
+    </p>
+    <p class="targo-lead mt-3 max-w-2xl text-[14px]">
+      Every project starts with a free consultation, a clear scope and a fixed quote before work
+      begins.
     </p>
 
     <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

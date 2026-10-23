@@ -366,6 +366,12 @@
     <p class="targo-lead mt-6 max-w-2xl">
       Tell us about your project — we'll reply within 24 hours with next steps.
     </p>
+    <p class="targo-lead mt-3 max-w-2xl text-[14px]">
+      Prefer to check the details first?
+      <a class="font-bold text-[#0a6f8c] underline-offset-4 hover:text-[#15bcdf] hover:underline" href="/faq"
+        >Read the FAQ →</a
+      >
+    </p>
 
     <div class="mt-12 grid gap-5 lg:grid-cols-5">
       <!-- form card -->

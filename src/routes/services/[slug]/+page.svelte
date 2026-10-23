@@ -32,6 +32,8 @@
   name="{data.entry.title} — Services — Tech Pixel A2H"
   description={data.entry.description}
   path="/services/{data.entry.slug}"
+  pageType="ItemPage"
+  service={data.entry}
   crumbs={[{ name: 'Services', path: '/services' }, { name: data.entry.title, path: `/services/${data.entry.slug}` }]}
 />
 
@@ -43,6 +45,31 @@
     <p class="targo-eyebrow">Service {data.entry.num}</p>
     <h1 class="targo-title mt-4">{data.entry.title}</h1>
     <p class="targo-lead mt-6 max-w-2xl">{data.entry.description}</p>
+
+    <dl class="mt-10 grid gap-5 border-y border-[rgba(18,33,46,0.12)] py-6 sm:grid-cols-2">
+      <div>
+        <dt class="targo-eyebrow">Best for</dt>
+        <dd class="targo-lead mt-2 text-[15px]">Small and growing businesses</dd>
+      </div>
+      <div>
+        <dt class="targo-eyebrow">Service area</dt>
+        <dd class="targo-lead mt-2 text-[15px]">India</dd>
+      </div>
+      <div>
+        <dt class="targo-eyebrow">How it starts</dt>
+        <dd class="targo-lead mt-2 text-[15px]">
+          Free consultation, then a clear plan and fixed quote
+        </dd>
+      </div>
+      <div>
+        <dt class="targo-eyebrow">Next step</dt>
+        <dd class="targo-lead mt-2 text-[15px]">
+          <a class="font-bold text-[#0a6f8c] transition-colors hover:text-[#15bcdf]" href="/#contact">
+            Tell us about your project →
+          </a>
+        </dd>
+      </div>
+    </dl>
 
     <div class="targo-card mt-12 p-8 md:p-12">
       <h2 class="targo-eyebrow">What's included</h2>

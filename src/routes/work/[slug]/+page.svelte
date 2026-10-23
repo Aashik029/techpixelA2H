@@ -32,6 +32,8 @@
   name="{data.entry.title} — Work — Tech Pixel A2H"
   description={data.entry.summary}
   path="/work/{data.entry.slug}"
+  pageType="ItemPage"
+  work={data.entry}
   crumbs={[{ name: 'Work', path: '/work' }, { name: data.entry.title, path: `/work/${data.entry.slug}` }]}
 />
 

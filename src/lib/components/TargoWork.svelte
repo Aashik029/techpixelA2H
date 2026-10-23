@@ -1,50 +1,7 @@
 <script lang="ts">
-  const visuals = ['store', 'dash', 'hrms', 'posters', 'blog', 'growth'] as const;
+  import { WORK } from '$lib/content/work';
 
-  const projects = [
-    {
-      slug: 'local-store-online',
-      cat: 'E-commerce Website',
-      title: 'Local Store, Online Overnight',
-      d: 'A complete online store for a neighborhood retailer — product catalog, WhatsApp ordering, and festival offer banners.',
-      disclosure: 'Sample work — illustrative example, not a client engagement.'
-    },
-    {
-      slug: 'team-workspace',
-      cat: 'B2B Web Application',
-      title: 'One Workspace for the Whole Team',
-      d: 'A shared dashboard where a growing business tracks projects, clients, and daily tasks — all in one place.',
-      disclosure: 'Sample work — illustrative example, not a client engagement.'
-    },
-    {
-      slug: 'hrms-concept',
-      cat: 'HRMS Concept',
-      title: 'HR Without the Spreadsheets',
-      d: 'Attendance, leave requests, and employee records in a clean visual system — concept interface for modern HR teams.',
-      disclosure: 'Concept work — interface concept, not shipped for a client.'
-    },
-    {
-      slug: 'festival-posters',
-      cat: 'Poster Pack',
-      title: 'Festival Season, Fully Designed',
-      d: 'A complete set of offer posters, social creatives, and banners for a retail brand’s festival campaign.',
-      disclosure: 'Sample work — illustrative example, not a client engagement.'
-    },
-    {
-      slug: 'seo-blog-system',
-      cat: 'SEO Blog System',
-      title: 'Content That Brings Customers',
-      d: 'A search-optimized blog and content engine that turns everyday questions into a steady stream of new enquiries.',
-      disclosure: 'Sample work — illustrative example, not a client engagement.'
-    },
-    {
-      slug: 'growth-campaign',
-      cat: 'Growth Campaign',
-      title: 'From Invisible to Booked Out',
-      d: 'Social media creatives, WhatsApp follow-ups, and review engine — a full local growth loop for a service business.',
-      disclosure: 'Sample work — illustrative example, not a client engagement.'
-    }
-  ];
+  const visuals = ['store', 'dash', 'hrms', 'posters', 'blog', 'growth'] as const;
 </script>
 
 <section id="work" class="targo-band px-6 py-24 md:py-32" aria-label="Selected work">
@@ -60,7 +17,7 @@
     </div>
 
     <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-      {#each projects as p, i (p.title)}
+      {#each WORK as p, i (p.title)}
         {@const v = visuals[i]}
         <a href="/work/{p.slug}" class="targo-card flex flex-col overflow-hidden">
           <!-- dashboard / app mockup header -->
@@ -203,7 +160,7 @@
             <h3 class="targo-quant text-[22px] font-bold uppercase leading-tight text-[#12212e]">
               {p.title}
             </h3>
-            <p class="targo-lead mt-3 flex-1 text-[15px]">{p.d}</p>
+            <p class="targo-lead mt-3 flex-1 text-[15px]">{p.summary}</p>
             <p class="targo-lead mt-2 text-[12px]">{p.disclosure}</p>
           </div>
         </a>

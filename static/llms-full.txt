@@ -1,0 +1,233 @@
+# Tech Pixel A2H - Full Site Text
+
+> Tech Pixel A2H is a team in India that helps small and growing businesses get online, automate routine work, and attract customers. Core services: web development, AI automation, poster design, content creation, and digital marketing.
+
+This file gives AI assistants and answer engines the full public text of the site in one place. All work entries state whether they are client work, samples, or concepts.
+
+## Company at a glance
+
+- What we do: Web development, AI automation, poster design, content creation, and digital marketing - one team for everything a business needs online.
+- Who we help: Small and growing businesses across India.
+- Track record: 25+ projects delivered for 15+ clients.
+- Typical website timeline: 2-3 weeks.
+- Reply time: Within 24 hours.
+- How projects start: Free consultation, then a clear plan and a fixed quote.
+- Leadership: Ajay A, Founder & CEO; Hanush S, CTO.
+- Service area: India.
+
+## About Tech Pixel A2H
+
+Tech Pixel A2H started with a simple observation: small businesses do not need bigger agencies - they need someone who listens, builds fast, and stays around after launch. The team handles design, development, automation, and marketing under one roof, so clients do not have to coordinate between five different freelancers. No jargon. No over-promising. Just work that makes a difference.
+
+### Leadership
+
+**Ajay A - Founder & CEO**
+
+Ajay founded Tech Pixel A2H to give small businesses enterprise-grade digital work without the agency overhead. He leads strategy and client relationships - every project ships only when it solves the client's real problem.
+
+**Hanush S - CTO**
+
+Hanush leads technology at Tech Pixel A2H - architecture, engineering quality, and delivery. He turns client goals into fast, reliable systems that scale.
+
+### Values
+
+1. Problem-first thinking: We start with the business problem, not with technology. Every solution is designed around what the client actually needs.
+2. Fast, focused delivery: Small team, no bureaucracy. Websites in 2-3 weeks, automation set up in days, designs turned around fast.
+3. Support that stays: We do not disappear after delivery. Training, documentation, and ongoing support come standard with every project.
+
+## Services
+
+### Web Development
+
+URL: https://tech-pixel-a2h.vercel.app/services/web-development
+
+Business websites, portfolios, landing pages, and e-commerce stores. Fast, mobile-first, and built to convert visitors into customers.
+
+What you get: Business websites, portfolios, landing pages, e-commerce stores.
+
+Detail: You get a fast, mobile-first site shaped around your offer - whether that is a business website, a portfolio, a landing page, or an e-commerce store. Every page is kept simple and direct so visitors understand what you do and know how to contact you or buy from you.
+
+### AI Automation
+
+URL: https://tech-pixel-a2h.vercel.app/services/ai-automation
+
+WhatsApp bots, lead qualification, follow-up sequences, and business reports - automation that runs routine work while you sleep.
+
+What you get: WhatsApp bots, lead qualification, follow-up sequences, business reports.
+
+Detail: You hand over the repetitive follow-up work - WhatsApp bots that reply for you, lead qualification, follow-up sequences, and clear business reports. It keeps running in the background so routine enquiries and updates are handled even when you are away from your phone.
+
+### Poster Design
+
+URL: https://tech-pixel-a2h.vercel.app/services/poster-design
+
+Festival creatives, offer posters, event flyers, and brand kits that stop the scroll.
+
+What you get: Festival creatives, offer posters, event flyers, brand kits.
+
+Detail: You get scroll-stopping designs made for your message - festival creatives, offer posters, event flyers, and matching brand kits. Each piece keeps your text readable and your branding consistent so people recognise you at a glance.
+
+### Content Creation
+
+URL: https://tech-pixel-a2h.vercel.app/services/content-creation
+
+Product videos, reels, business profiles, and presentation decks that tell your story.
+
+What you get: Product videos, reels, business profiles, presentation decks.
+
+Detail: You tell your story in a format people actually watch - product videos, reels, business profiles, and presentation decks. Each piece is kept clear and straightforward so customers quickly understand what you offer and why it matters to them.
+
+### Digital Marketing
+
+URL: https://tech-pixel-a2h.vercel.app/services/digital-marketing
+
+SEO, social media, and WhatsApp campaigns that bring a steady flow of new customers.
+
+What you get: SEO, social media, WhatsApp campaigns.
+
+Detail: You reach new customers through the channels they already use - SEO, social media, and WhatsApp campaigns. The focus stays on a steady, straightforward flow of enquiries so people keep finding you and getting in touch.
+
+## Work
+
+All entries below are clearly labelled. Some are samples or concepts, not client engagements.
+
+### Local Store, Online Overnight
+
+URL: https://tech-pixel-a2h.vercel.app/work/local-store-online
+Type: E-commerce Website
+Status: Selected sample - capability example, not a client engagement.
+
+Summary: A complete online store for a neighborhood retailer - product catalog, WhatsApp ordering, and festival offer banners.
+
+Detail: This sample shows how a neighborhood retailer could bring its shelves online, with a browsable product catalog paired with simple WhatsApp ordering and eye-catching festival offer banners. As an E-commerce Website example, it demonstrates catalog layout, chat-based ordering flow, and promotional banner placement a small shop could reuse.
+
+### One Workspace for the Whole Team
+
+URL: https://tech-pixel-a2h.vercel.app/work/team-workspace
+Type: B2B Web Application
+Status: Selected sample - capability example, not a client engagement.
+
+Summary: A shared dashboard where a growing business tracks projects, clients, and daily tasks - all in one place.
+
+Detail: This sample explores a shared dashboard where a growing business can follow projects, clients, and daily tasks together, keeping everyday work visible in one place. As a B2B Web Application example, it demonstrates project lists, client records, and daily task views arranged in a single workspace layout.
+
+### HR Without the Spreadsheets
+
+URL: https://tech-pixel-a2h.vercel.app/work/hrms-concept
+Type: HRMS Concept
+Status: Concept exploration - interface concept, not shipped for a client.
+
+Summary: Attendance, leave requests, and employee records in a clean visual system - concept interface for modern HR teams.
+
+Detail: A calmer take on routine HR work, with attendance, leave requests, and employee records presented in a clean visual system designed for modern HR teams. As an HRMS Concept, it demonstrates attendance views, leave-request flows, and employee record layouts, showing the interface direction without presenting it as delivered work.
+
+### Festival Season, Fully Designed
+
+URL: https://tech-pixel-a2h.vercel.app/work/festival-posters
+Type: Poster Pack
+Status: Selected sample - capability example, not a client engagement.
+
+Summary: A complete set of offer posters, social creatives, and banners for a retail brand's festival campaign.
+
+Detail: This sample gathers a full festival toolkit for a retail brand, with offer posters, social creatives, and banners designed to carry one campaign across print and screen. As a Poster Pack example, it demonstrates offer layouts, social-size adaptations, and banner variations that keep a festival message consistent.
+
+### Content That Brings Customers
+
+URL: https://tech-pixel-a2h.vercel.app/work/seo-blog-system
+Type: SEO Blog System
+Status: Selected sample - capability example, not a client engagement.
+
+Summary: A search-optimized blog and content engine that turns everyday questions into a steady stream of new enquiries.
+
+Detail: This sample lays out a search-optimized blog and content engine built around the questions customers already ask, turning helpful answers into a steady stream of new enquiries. As an SEO Blog System example, it demonstrates article layouts, topic organization, and enquiry paths that show how content can support discovery.
+
+### From Invisible to Booked Out
+
+URL: https://tech-pixel-a2h.vercel.app/work/growth-campaign
+Type: Growth Campaign
+Status: Selected sample - capability example, not a client engagement.
+
+Summary: Social media creatives, WhatsApp follow-ups, and review engine - a full local growth loop for a service business.
+
+Detail: This sample maps a full local growth loop for a service business, connecting social media creatives with WhatsApp follow-ups and a simple review engine. As a Growth Campaign example, it demonstrates social creative formats, follow-up messaging flow, and review prompts working together as one repeatable loop.
+
+## How projects work
+
+1. Discover: A conversation about the business, customers, and what success looks like. Includes a free consultation call, requirement mapping, and an honest timeline and quote.
+2. Plan: The direction is approved before the build - design previews, a content outline, and fixed pricing are shared upfront.
+3. Build: Design, development, and testing with regular updates, preview links to review, and revisions included.
+4. Deliver and support: Launch day is just the start. Training, documentation, and ongoing support keep the client confident. Includes launch and training, a free support window, and growth guidance.
+
+## Frequently asked questions
+
+### What does Tech Pixel A2H do?
+
+Tech Pixel A2H is a team in India that helps small and growing businesses get online, automate routine work, and attract customers. We build websites, set up AI automation, design posters and content, and run digital marketing campaigns.
+
+### How much does a project cost?
+
+Every project is quoted individually based on scope. After a free consultation, we share a clear plan and a fixed quote before work begins, so you know the cost upfront.
+
+### How long does a website take?
+
+Most websites take 2-3 weeks. The exact timeline depends on the number of pages, content readiness, and the features you need. We confirm the timeline before work begins.
+
+### How do we get started?
+
+Tell us about your business and what you need through the contact form, WhatsApp, or email. We aim to reply within 24 hours with next steps, starting with a free consultation call.
+
+### What services do you offer?
+
+We offer five core services: web development, AI automation, poster design, content creation, and digital marketing. You can start with one service and add more as your business grows.
+
+### Who do you work with?
+
+We work with small and growing businesses across India. Our services are scoped for teams that need a professional website, automation, or ongoing design and marketing support without a large agency overhead.
+
+### Do you offer a free consultation?
+
+Yes. We start with a free consultation call to understand your business, your customers, and what success looks like. From there we map the requirements and share an honest timeline and quote.
+
+### Do you build e-commerce stores?
+
+Yes. E-commerce stores are one of the website types we build, alongside business websites, portfolios, and landing pages. Every store is designed to be fast, mobile-first, and easy for customers to use.
+
+### Can you automate WhatsApp?
+
+Yes. WhatsApp bots are part of our AI automation service, along with lead qualification, follow-up sequences, and business reports. The goal is to handle routine enquiries and updates even when you are away from your phone.
+
+### Do you provide support after launch?
+
+Yes. Training, documentation, and ongoing support are included with every project. We also offer growth guidance after launch so you are not left figuring out the next step alone.
+
+### Can I start with one service and add more later?
+
+Yes. Pick what you need now and add more as you grow. The services are designed to work together, so your website, automation, design, content, and marketing can stay consistent as you expand.
+
+### Where are you based?
+
+Tech Pixel A2H is based in India and works with businesses across the country. We communicate by email, WhatsApp, and calls, so your location is not a barrier.
+
+### How fast do you reply?
+
+We aim to reply within 24 hours. You can reach us through the contact form, WhatsApp, email, or phone.
+
+## Contact
+
+- Phone: +91 95977 96186
+- Email: techpixela2h@gmail.com
+- WhatsApp: https://wa.me/919597796186
+- Contact form: https://tech-pixel-a2h.vercel.app/#contact
+- Location: India
+
+## Pages
+
+- Home: https://tech-pixel-a2h.vercel.app/
+- About: https://tech-pixel-a2h.vercel.app/about
+- Services: https://tech-pixel-a2h.vercel.app/services
+- Work: https://tech-pixel-a2h.vercel.app/work
+- FAQ: https://tech-pixel-a2h.vercel.app/faq
+- Resources: https://tech-pixel-a2h.vercel.app/download
+- Privacy Policy: https://tech-pixel-a2h.vercel.app/privacy
+- Terms of Service: https://tech-pixel-a2h.vercel.app/terms
+- Sitemap: https://tech-pixel-a2h.vercel.app/sitemap.xml

@@ -41,6 +41,8 @@
   name="Work — Tech Pixel A2H"
   description="A sample of our design and build capabilities, including concept work."
   path="/work"
+  pageType="CollectionPage"
+  works={data.work}
   crumbs={[{ name: 'Work', path: '/work' }]}
 />
 
@@ -53,6 +55,10 @@
     <h1 class="targo-title mt-4">Our<br /><span class="t-accent">Work</span></h1>
     <p class="targo-lead mt-6 max-w-2xl">
       A sample of our design and build capabilities, including concept work.
+    </p>
+    <p class="targo-lead mt-3 max-w-2xl text-[14px]">
+      Each entry states whether it is a client engagement, a sample, or a concept — so you always
+      know what you are looking at.
     </p>
 
     <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
